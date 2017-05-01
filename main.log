@@ -1,0 +1,138 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 MAR 2017 09:02
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.bib
+(./main.bib
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+./main.bib:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 @
+     article{aprile_doke_LXe,
+? 
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+./main.bib:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 @article{aprile_
+                    doke_LXe,
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+./main.bib:14: Extra }, or forgotten $.
+l.14 }
+      
+? 
+./main.bib:15: Missing $ inserted.
+<inserted text> 
+                $
+l.15 
+     
+? 
+
+Overfull \hbox (92.90317pt too wide) in paragraph at lines 1--15
+[]$[]\OML/cmm/m/it/10 oke[]Xe; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (298.13705pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (147.27719pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (117.62396pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.20093pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; issue \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (44.7893pt too wide) in paragraph at lines 1--15
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (120.29642pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; numpages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (39.99306pt too wide) in paragraph at lines 1--15
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.0024pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; month \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.97992pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (145.89993pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; doi \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (163.92389pt too wide) in paragraph at lines 1--15
+[]\OML/cmm/m/it/10 ; url \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (248.54916pt too wide) in paragraph at lines 1--15
+[]$ 
+ []
+
+
+./main.bib:18: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 @
+      article{sampling_doug,
+? 
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing c
