@@ -149,17 +149,24 @@ There are four distinct time-intervals in figure \ref{fig:RGAtrace} labelled I t
 \item IV is the period of time after the xenon flow has been stopped (step \ref{step:stop_flow}). During this period the krypton pressure will fall away exponentially before it eventually returns to the baseline value.
 \end{itemize}
 
-The shape of this signal can vary drastically depending on the concentration of krypton, the flow rate of xenon, the size of the xenon sample, the impedance of the system, and the physical geometry of the system. For a signal such as this, $\Phi$ can be extracted from these traces using a simple equation:
+$\Phi$ is extracted from the RGA pressure trace using the equation:
 \begin{equation}
-\label{eq:average_analysis}
-PP_{Kr,eq}=CQ_{Xe}\Phi,
+\label{eq:basic_analysis}
+\frac{PP_{Kr,i}-\overline{PP}_{Kr,0}}{Q_{Xe,i}}=C\Phi,
 \end{equation}
-where $PP_{Kr,eq}$ is the equilibrium krypton pressure at the RGA seen in region III, $C$ is a calibration constant which encapsulates the sensitivity of the system, and $Q_{Xe}$ is the flow rate of xenon into the cold trap. In high-sensitivity measurements, the sample volume will be exhausted before the krypton pressure equilibrates. In these cases we integrate equation \ref{eq:average_analysis} to give us:
+where $C$ is a calibration constant which encapsulates the sensitivity of the system and $Q_{Xe,i}$ is the instantaneous flow rate of xenon into the cold trap. $PP_{Kr,i}$ is a krypton pressure data point measured in the equilibrium region (III). It is possible that there is a physical background seen by the RGA at the mass of interest (84 amu for the case of krypton), but we are only interested in the pressure which is extracted from the xenon sample. To account for any non-zero baseline we subtract out $\overline{PP}_{Kr,0}$, the average krypton pressure measured by the RGA during region I. 
+
+The simplest way to calculate the purity from equation \ref{eq:basic_analysis} is to average over all of the data points in region III:
+\begin{equation}
+\Phi=\frac{1}{CN}\sum_{i=1}^{N}\frac{PP_{Kr,i}-\overline{PP}_{Kr,0}}{Q_{Xe,i}}
+\label{eq:average_analysis}
+\end{equation}
+In high-sensitivity measurements, the sample volume may be exhausted before the krypton pressure equilibrates, so we must allow $PP_{Kr,i}$ to be drawn from the non-equilibrium regions II and IV, as well as region III. In these cases we integrate equation \ref{eq:basic_analysis} to give us:
 \begin{equation}
 \label{eq:int_analysis}
-\Phi = \frac{1}{CV\Delta P_{Xe}}\int PP_{Kr}dt,
+\Phi=\frac{1}{CV\Delta P_{Xe}}\sum_{i=1}^{N} (PP_{Kr,i}-\overline{PP}_{Kr,0})\Delta t_i
 \end{equation}
-where $V$ is the volume of the sample volume and $\Delta P$ is the total drop in xenon pressure in the sample volume. Also note that we have exchanged $PP_{Kr,eq}$ for the more general $PP_{Kr}$, which is the instantaneous krypton pressure in region II, III, or IV. In figure \ref{fig:linplot} we see that this method is linear in $\Phi$ even though we are including the non-equilibrium values of $PP_{Kr}$ in our analysis.
+where $V$ is the volume of the sample volume and $\Delta P_{Xe}$ is the total drop in xenon pressure in the sample volume. In figure \ref{fig:linplot} we see that this method is linear in $\Phi$ even though we are including the non-equilibrium values of $PP_{Kr}$ in our analysis.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{0.5\textwidth}
@@ -175,6 +182,20 @@ where $V$ is the volume of the sample volume and $\Delta P$ is the total drop in
 \caption{Linearity of the integration-style analysis described in equation \ref{eq:int_analysis}. The krypton signals used in these measurements never reached an equilibrium value.}
 \label{fig:linplot}
 \end{figure}
+
+
+The data collected in region I is also used to estimate the error on the measurement. The fluctuations of the RGA tend to increase at higher partial pressure, as shown in figure \ref{fig:RGAnoise}. We take the baseline fluctuations, $\sigma_0$, to be equal to the standard deviation of the region I data points. The random uncertainty of each data point, $PP_{Kr,i}$, is then taken to be:
+\begin{equation}
+\sigma_i=\sigma_{0}*(1+0.009*PP_{Kr,i}).
+\end{equation}
+
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{Figures/RGA_Noise_v_PP.png}
+  \caption{The trend in RGA fluctuations as a function of partial pressure. The noise ratio is defined as the fraction by which the RGA fluctuations increase when the partial pressure is increased from its baseline value ($\textrm{Noise ratio} \equiv \sigma(PP)/\sigma(baseline)$). }
+  \label{fig:RGAnoise}
+\end{figure}
+
 
 \subsection{Vacuum Equations}
 In order to optimize the sensitivity of the cold-trap system, it is good to have an understanding of the basics of vacuum physics. A vacuum system can be analogized to an electrical circuit, with pressure taking the place of voltage, flow rate ($Q$) taking the place of current, and impedance ($Z$) taking the place if resistance.  This analogy gives us with the equation:
@@ -210,7 +231,7 @@ There are several compounding factors that come into play when deciding exactly 
 Returning to the vacuum equations we will see that although we have artificially defined $PP_{Xe}$, $Z_1$ and $Z_2$ are not fully determined by this choice. By using equations \ref{eq:vaclaw1} and \ref{eq:vaclaw2}, and the requirement that $PP_{Xe}=1\times 10^{-5}$ Torr, we place a constraint on the impedances:
 \begin{equation}
 \label{eq:xepres1}
-Q_{Xe}=PP_{Xe}S_{RGA}=\frac{P_{ICE}-PP_{Xe}}{Z_1}\approx \frac{P_{ICE}}{Z_1},
+Q_{Xe,RGA}=PP_{Xe}S_{RGA}=\frac{P_{ICE}-PP_{Xe}}{Z_1}\approx \frac{P_{ICE}}{Z_1},
 \end{equation}
 where $1/S_{RGA}=1/S_{TP1}+Z_2$. This gives,
 \begin{equation}
@@ -219,37 +240,34 @@ S_{RGA}\cdot Z_1= \frac{P_{ICE}}{PP_{Xe}} = 180.
 \end{equation}
 The exact numerical value of $S_{RGA}\cdot Z_1$ is less important than is the fact that for whatever amount $Z_1$ is increased, $S_{RGA}$ must be decreased proportionally in order to maintain the optimal $PP_{Xe}$. This means that $PP_{Xe}$ is held constant, regardless of $Z_1$.
 
-The operating principle of cold-trap sampling is that while the xenon gets frozen into the cold-trap, the trace gasses, such as krypton pass through. Another way to put this is that at the output of the cold trap the xenon is frozen to a constant pressure, while krypton mass flow ($Q_{Kr}$) is conserved. In practice, the conservation is not perfect, so we add a throughput constant, $\alpha \equiv Q_{Kr}/Q_{Kr_0}$, where $Q_{Kr_0}$ is the flow rate into the cold trap. The physical basis of the throughput parameter is not known, but we have put great effort into characterizing it empirically. $Q_{Kr_0}$ is equal to the flow rate of xenon into the cold-trap ($Q_{Xe_0}$) times the concentration of krypton in the xenon sample, $\Phi_{Kr}$. Put together, we get the following equation: 
+The operating principle of cold-trap sampling is that while the xenon gets frozen into the cold-trap, the trace gasses, such as krypton pass through. Another way to put this is that at the output of the cold trap the xenon is frozen to a constant pressure, while krypton mass flow ($Q_{Kr,out}$) is conserved. In practice, the conservation is not perfect, so we add a throughput constant, $\alpha \equiv Q_{Kr,out}/Q_{Kr,in}$, where $Q_{Kr,in}$ is the flow rate into the cold trap. The physical basis of the throughput parameter is not known, but we have put great effort into characterizing it empirically. $Q_{Kr,in}$ is equal to the flow rate of xenon into the cold-trap ($Q_{Xe,CT}$) times the concentration of krypton in the xenon sample, $\Phi_{Kr}$. Put together, we get the following equation: 
 \begin{equation}
-Q_{Kr}=\alpha Q_{Xe_0}\Phi_{Kr}.
+Q_{Kr,out}=\alpha Q_{Xe,CT}\Phi_{Kr}.
 \end{equation}
 Plugging this into the vacuum equations, we can find the relationship between the parameter of interest, $\Phi_{Kr}$, and the measurable quantities, $Q_{Xe_0}$ and $PP_{Kr}$:
 \begin{equation}
 \label{eq:krpres1}
-PP_{Kr}=\frac{\alpha}{S_{RGA}}\Phi_{Kr}Q_{Xe_0}.
+PP_{Kr}=\frac{\alpha}{S_{RGA}}\Phi_{Kr}Q_{Xe,CT}.
 \end{equation}
 This relation shows the proportionality between partial pressure, and flow-rate times concentration that was found experimentally in \cite{sampling_doug} and \cite{sampling_dm}. By imposing the constraint from equation \ref{eq:impconstraint} we can see how altering the system impedance is expected to affect $PP_{Kr}$:
 \begin{equation}
 \label{eq:krpres2}
-PP_{Kr}=\frac{\alpha}{180}Z_{1}\Phi_{Kr}Q_{Xe_0}.
+PP_{Kr}=\frac{\alpha}{180}Z_{1}\Phi_{Kr}Q_{Xe,CT}.
 \end{equation}
-This equation yields an important insight into the optimization of a cold-trap sampling system. By holding $PP_{Xe}$ constant through adjusting $S_{RGA}$, the krypton partial pressure can be increased by increasing $Z_1$, which means that a larger signal can be achieved using the same sample size of xenon.
 
+This equation replicates equations \ref{eq:average_analysis} and \ref{eq:int_analysis} where the calibration constant, $C$ from equation \ref{eq:average_analysis} has been replaced with $\frac{\alpha}{180}Z_{1}$. We now have a physical basis for our analysis technique and a clear path to take in optimizing the cold trap sampling technique. 
 
 \section{System Parameters and Optimization}
-There are several knobs to turn that affect a cold-trap sampling system's response to krypton. In general these are:
-\begin{enumerate}
-\item RGA parameters
-\item Xenon flow rate and duration
-\item System impedances
-\item System geometry
-\end{enumerate}
-These settings all have individual effects on the sensitivity of the sampling system, but also interact with each other in nontrivial ways that must be understood empirically in order to maximize the system response to krypton.
+Optimizing a cold-trap sampling system is a matter of maximizing the signal to noise ratio. We assume for now that the RGA noise has Gaussian fluctuations with standard deviation $\sigma$. This Consider an idealized version of figure \ref{fig:RGAtrace} where the rise and fall were instantaneous, so that the pressure trace was given by a square pulse of height $PP_{Kr,eq}$. The width of this pulse will be given by the amount of xenon used in the analysis ($V\Delta P$) divided by the flow rate of the xenon into the cold trap $Q_{Xe,CT}$. Both the averaging method from equation \ref{eq:average_analysis}, and the integration method from equation \ref{eq:int_analysis} would give a signal-to-noise proportional to $1/\sqrt{N}$, with $N$ being the number of data points in the top of the square pulse. Using a constant RGA sampling rate of $r$ we find that the expression for signal to noise in either case will be:
+\begin{equation}
+\frac{signal}{sigma_{total}}=\overline{PP}
+\end{equation}
+ 
 
 \subsection{RGA Parameters} 
 There is a long list of internal RGA parameters which should be understood before operating a cold trap system. These can be found in chapter 6 of the \href{http://www.thinksrs.com/downloads/PDFs/Manuals/RGAm.pdf}{RGA manual}. The two parameters that have the greatest effect on the sensitivity to krypton are the noise floor and the high-voltage setting of the continuous dynode electron multiplier (CDEM). 
 
-The noise floor sets the scan speed of the RGA; the lower the noise floor setting, the longer the RGA will spend integrating current on a single mass point. The practical effects are threefold. The obvious first implication is that with a low noise floor, it will take much longer to to collect a single data point. At a noise floor setting of 0 the RGA will sit on a mass point for about 5 seconds, and at a noise floor setting of 3 it will sit for less the 0.5 seconds per mass. For high-sensitivity analysis, it is better to have the noise floor set as low as possible, which will give you fewer data points which have a smaller variance. This will reduce the amount of time spent communicating with the RGA, as well as the amount of down time between communications. 
+The noise floor sets the scan speed of the RGA; the lower the noise floor setting, the longer the RGA will spend integrating current on a single mass point. The practical effects are threefold. The obvious first implication is that with a low noise floor, it will take much longer to to collect a single data point. At a noise floor setting of 0 the RGA will sit on a mass point for more than 5 seconds, and at a noise floor setting of 3 it will sit for less than 0.5 seconds per mass. For high-sensitivity analysis, it is better to have the noise floor set as low as possible, which will give you fewer data points which have a smaller variance. This will reduce the amount of time spent communicating with the RGA, as well as the amount of down time between communications. 
 
 {\color{red}At higher noise floors, there tends to be an offset in the baseline. While we usually try to account for this by using baseline-subtracted pressures in purity calculations, it is possible that the shifted baseline is not additive to the pressure signal. This is indicated by the krypton signal in the LUX run04 data decreasing artificially. There is also evidence from the SLAC system that the baseline is not strictly additive to a physical pressure signal.}
 
@@ -264,6 +282,7 @@ Setting the voltage on the CDEM is a balancing act. Increasing the voltage incre
 The health of the CDEM can be tracked using one of the xenon ice peaks, assuming the MG and SP parameters are not changed. MG is the CDEM gain factor and SP is the mass sensitivity factor used to convert the RGA current to partial pressure. The physical values may change over time, but the parameter stored in the RGA memory will not change unless a head-calibration is run. In particular, as the CDEM degrades, the gain will fall. A drift in the gain will bee seen most easily as a drop in the measured xenon ice pressure. Since the vapor pressure of xenon ice at 77 Kelvin is physically constant, if this pressure reading drops, it indicates that the gain has dropped. To maintain the CDEM gain, the xenon peak at 62 amu should be monitored. Whenever this value drops, the voltage should be increased until the pressure returns to its initial value.
 
 \subsection{Flow Rate}
+
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{Figures/FlowResponse.png}

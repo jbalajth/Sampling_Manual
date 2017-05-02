@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 APR 2017 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2017 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -341,66 +341,72 @@ File: Figures/RGA_trace.png Graphic file (type png)
 Package pdftex.def Info: Figures/RGA_trace.png used on input line 139.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
  [6] [7 <./Figures/RGA_trace.png (PNG copy)>]
-[8] <Figures/RGATrace_int.png, id=156, 501.875pt x 401.5pt>
+[8] <Figures/RGATrace_int.png, id=157, 501.875pt x 401.5pt>
 File: Figures/RGATrace_int.png Graphic file (type png)
 
 <use Figures/RGATrace_int.png>
-Package pdftex.def Info: Figures/RGATrace_int.png used on input line 167.
+Package pdftex.def Info: Figures/RGATrace_int.png used on input line 174.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/LinPlot0217.png, id=157, 501.875pt x 401.5pt>
+<Figures/LinPlot0217.png, id=158, 501.875pt x 401.5pt>
 File: Figures/LinPlot0217.png Graphic file (type png)
 
 <use Figures/LinPlot0217.png>
-Package pdftex.def Info: Figures/LinPlot0217.png used on input line 172.
+Package pdftex.def Info: Figures/LinPlot0217.png used on input line 179.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
  [9 <./Figures/RGATrace_int.png (PNG copy)> <./Figures/LinPlot0217.png (PNG cop
 y)>]
+<Figures/RGA_Noise_v_PP.png, id=171, 501.875pt x 401.5pt>
+File: Figures/RGA_Noise_v_PP.png Graphic file (type png)
+
+<use Figures/RGA_Noise_v_PP.png>
+Package pdftex.def Info: Figures/RGA_Noise_v_PP.png used on input line 194.
+(pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
+ [10 <./Figures/RGA_Noise_v_PP.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 195.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 216.
 
+LaTeX Warning: Reference `eq:volflow' on page 11 undefined on input line 216.
 
-LaTeX Warning: Reference `eq:volflow' on page 10 undefined on input line 195.
-
-[10] [11] [12] [13] <Figures/CDEM_gain_noise.png, id=205, 501.875pt x 401.5pt>
+[11] [12] [13] [14] <Figures/CDEM_gain_noise.png, id=218, 501.875pt x 401.5pt>
 File: Figures/CDEM_gain_noise.png Graphic file (type png)
 
 <use Figures/CDEM_gain_noise.png>
-Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 259.
+Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 277.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FlowResponse.png, id=206, 562.1pt x 421.575pt>
+<Figures/FlowResponse.png, id=219, 562.1pt x 421.575pt>
 File: Figures/FlowResponse.png Graphic file (type png)
 
 <use Figures/FlowResponse.png>
-Package pdftex.def Info: Figures/FlowResponse.png used on input line 269.
+Package pdftex.def Info: Figures/FlowResponse.png used on input line 288.
 (pdftex.def)             Requested size: 455.24408pt x 341.43527pt.
-
+ [15]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15 <./Figures/CDEM_gain_noise.png (PNG copy)>]
+[16 <./Figures/CDEM_gain_noise.png (PNG copy)>]
 
-LaTeX Warning: Reference `fig:SLACpid' on page 16 undefined on input line 285.
+LaTeX Warning: Reference `fig:SLACpid' on page 17 undefined on input line 304.
 
-[16 <./Figures/FlowResponse.png (PNG copy)>]
-<Figures/Mixing_diagram.png, id=220, 397.485pt x 210.7875pt>
+[17 <./Figures/FlowResponse.png (PNG copy)>]
+<Figures/Mixing_diagram.png, id=233, 397.485pt x 210.7875pt>
 File: Figures/Mixing_diagram.png Graphic file (type png)
 
 <use Figures/Mixing_diagram.png>
-Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 289.
+Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 308.
 (pdftex.def)             Requested size: 455.24408pt x 241.42596pt.
- [17 <./Figures/Mixing_diagram.png>] [18]
+ [18 <./Figures/Mixing_diagram.png>] [19]
 (./Sampling_Manual.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
  (./Sampling_Manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
 Package rerunfilecheck Info: File `Sampling_Manual.out' has not changed.
 (rerunfilecheck)             Checksum: 97B360632788E8DAF3AEFE525CED4232;1068.
 
@@ -410,13 +416,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
  ) 
 Here is how much of TeX's memory you used:
- 6755 strings out of 493089
- 104763 string characters out of 6134842
+ 6763 strings out of 493089
+ 104971 string characters out of 6134842
  189196 words of memory out of 5000000
- 10105 multiletter control sequences out of 15000+600000
+ 10111 multiletter control sequences out of 15000+600000
  22324 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,9n,40p,1482b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -432,10 +438,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Sampling_Manual.pdf (19 pages, 356838 bytes).
+Output written on Sampling_Manual.pdf (20 pages, 380427 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
