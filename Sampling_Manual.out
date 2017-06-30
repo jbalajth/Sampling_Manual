@@ -2,19 +2,22 @@
 \BOOKMARK [1][-]{section.2}{Technical Overview}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{System Construction}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Operational Outline}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Vacuum Equations}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Cold Trap System at Steady State}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Transient Response of Cold Trap System}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Entrapment of Krypton}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Analysis Scheme}{}% 9
-\BOOKMARK [1][-]{section.5}{System Parameters and Optimization}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{RGA Parameters}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Flow Rate}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.3}{Impedance}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.4}{System Geometry}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.5}{Ice Formation Procedure}{section.5}% 15
-\BOOKMARK [1][-]{section.6}{Calibrations}{}% 16
-\BOOKMARK [2][-]{subsection.6.1}{Preparation of Calibration Xenon}{section.6}% 17
-\BOOKMARK [2][-]{subsection.6.2}{Calibration Procedure}{section.6}% 18
-\BOOKMARK [1][-]{section.7}{Sensitivity Demonstration}{}% 19
-\BOOKMARK [1][-]{appendix.A}{Sample Procedures}{}% 20
+\BOOKMARK [1][-]{section.3}{Idealized Cold Trap Response}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Vacuum Impedances}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Generalized Cold Trap System Response}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Actual Behavior of a Cold Trap System}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Ice Formation}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Krypton Retention: Flow Rate Dependance}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Krypton Retention: Impedance Dependance}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Analysis Scheme}{}% 12
+\BOOKMARK [1][-]{section.6}{System Parameters and Optimization}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{RGA Parameters}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Flow Rate}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Impedance}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.4}{System Geometry}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.5}{Ice Formation Procedure}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Calibrations}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Preparation of Calibration Xenon}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Calibration Procedure}{section.7}% 21
+\BOOKMARK [1][-]{section.8}{Sensitivity Demonstration}{}% 22
+\BOOKMARK [1][-]{appendix.A}{Sample Procedures}{}% 23

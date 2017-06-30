@@ -134,7 +134,7 @@ The exact steps required for a particular analysis can be quite complex, and som
 
 The system is now in a safe state and the cold trap can be allowed to warm back to room temperature. The remaining xenon can then be recovered or discarded as desired, after which the system should be pumped to vacuum before collecting the next sample. It is important to note that this pump-out should be done using TP2, since the RGA volume should be kept at vacuum except for maintenance. The bypass line, as configured, allows the cold-trap volume and sample volume to be pumped out independent of one another.
 
-\section{Vacuum Equations}
+\section{Idealized Cold Trap Response}
 \label{sec:vaceq}
 In order to optimize the sensitivity of the cold-trap system, it is good to have an understanding of the basics of vacuum physics. A vacuum system can be analogized to an electrical circuit, with pressure taking the place of voltage, flow rate ($Q$) taking the place of current, and impedance ($Z$) taking the place if resistance.  This analogy gives us with the equation:
 \begin{equation}
@@ -157,9 +157,20 @@ where $S_{p}$ is the speed of the pump which is acting on the system, and $Z_{to
 P=Q/S_{eff}.
 \end{equation}
 
-\subsection{Cold Trap System at Steady State}
-\label{sec:steadystate}
-The RGA has a maximum operating pressure of $1\times 10^{-6}$ Torr, although we have found that operating at slightly higher pressures is possible with minimal degradation of the CDEM. This being the case, we place the requirement that the absolute pressure at the RGA be less than about $2\times 10^{-5}$ Torr. When analyzing xenon samples with a concentration of about one part per million or less, the xenon partial pressure, $PP_{Xe}$,  will dominate the absolute pressure. $PP_{Xe}$ is the sourced by the vapor above the xenon ice in the cold trap bleeding out of the cold-trap volume, into the RGA volume. The vapor pressure of xenon ice at liquid nitrogen temperature is $P_{ICE}=1.8\times 10^{-3}$ Torr, and so needs to be reduced by a factor of about 100 or more between the cold-trap and the RGA\cite{vaporpressure}. This is done by choosing appropriate system impedances, specifically the impedance between the cold-trap and the RGA ($Z_1$) and the impedance between the RGA and TP1 ($Z_2$). $Z_1$ and $Z_2$ can be adjusted using IV1 and IV2, respectively. It should be noted here that xenon at $1.8\times 10^{-3}$ Torr and 77 Kelvin in a $0.5"$ diameter cold trap has a Knudsen number of 0.6, and so is actually in the intermediate gas flow regime rather than the molecular flow regime\cite{vac_eq}. For the purposes of this document, we will use the molecular flow approximation to motivate and direct our empirical investigations.
+\subsection{Vacuum Impedances}
+The calculation of system impedances depends on which flow regime a gas resides. The flow regime is determined by whether a given gas molecule interacts primarily with other molecules, or with the walls of the vacuum chamber. The flow regime can be characterized by the Knudsen number, $K \equiv \lambda/d$, where $\lambda$ is the mean free path, and $d$ is the inner diameter of the vacuum chamber. For $K>>1$, a gas molecule is very likely to encounter the wall of the system before encountering another gas molecule; this is the molecular flow regime. When $K<<1$, the system is in the viscous flow regime where a gas molecule will be interacting predominantly with other gas molecules. If $K$ is $O(1)$, the system is in what is referred to as the intermediate regime.\cite{vac_eq}
+
+In the molecular flow regime the impedance of a system element will depend on the geometry of the element, and on the molecular weight and temperature of the gas in question, but it will not depend on the pressure of that gas. For instance, the impedance of an aperture with area $A$ will be given by:\cite{vac_eq}
+\begin{equation}
+\label{eq:aperture}
+Z=\sqrt{\frac{2\pi M}{8kTA^{2}}}.
+\end{equation}
+
+In the intermediate regime, the impedance picks up a complicated pressure dependance that can not be exactly calculated. Xenon gas inside the cold trap is at $1.8\times 10^{-3}$ Torr and 77 Kelvin.\cite{vaporpressure} In a $0.5"$ diameter cold trap the xenon has a Knudsen number of 0.6. This puts this section of plumbing in the intermediate gas flow regime rather than the molecular flow regime, and limits the accuracy of any results calculated using the molecular flow approximation. The role of vacuum equations in this document is to provide qualitative predicts on how the krypton pressure at the RGA will behave in response to changes in system parameters. The exact response of the system is always characterized empirically, as will be described in section \ref{sec:calibrations}. For this purpose, the molecular flow approximation will suffice to motivate and direct our empirical investigations.\cite{vac_eq}
+
+The particular impedances of interest here are impedance between the cold-trap and the RGA ($Z_1$) and the impedance between the RGA and TP1 ($Z_2$). IV1 and IV2 are in place so that $Z_1$ and $Z_2$ can be fine tuned to an optimal arrangement. This optimization will be described further in section \ref{sec:impedance}, but first there is a hard constraint that must be placed on the relative values of $Z_1$ and $Z_2$.
+
+The RGA has a maximum operating pressure of $1\times 10^{-6}$ Torr, although we have found that operating at about $1\times 10^{-5}$ Torr is possible with minimal degradation of the CDEM. When analyzing xenon samples with a concentration of about one part per million or less, the xenon partial pressure, $PP_{Xe}$,  will dominate the absolute pressure at the RGA. $PP_{Xe}$ is the sourced by the vapor of the xenon ice in the cold trap, which is $P_{ICE}=1.8\times 10^{-3}$ Torr, and so needs to be reduced by a factor of about 100 or more between the cold-trap and the RGA\cite{vaporpressure}. 
 
 There are several compounding factors that come into play when deciding exactly what $PP_{Xe}$ should be. These will be discussed in later sections, so we will take it as given here that the sensitivity is optimized between $PP_{Xe}=5\times10^{-6}$ Torr, and $PP_{Xe}=2\times10^{-5}$ Torr, and is largely unaffected by deviations within this range. For the sake of simplicity, we will usually demand that $PP_{Xe}$ to be the default pressure that the system plumbing gives when IV1 and IV2 are maximized. For the system described above, the this pressure will be about $1\times 10^{-5}$ Torr. 
 
@@ -173,9 +184,12 @@ where $1/S_{RGA}=1/S_{TP1}+Z_2$. This gives,
 \label{eq:impconstraint}
 S_{RGA}\cdot Z_1= \frac{P_{ICE}}{PP_{Xe}} = 180.
 \end{equation}
-$S_{RGA}$ is usually dominated by the impedance between the RGA and TP1. Depending on the model used, the speed of the turbo pump for xenon is around 50 liters per second. The impedance of cylindrical plumbing with a diameter of 1.5 inches is about $\frac{1}{320} s/L$ per centimeter of plumbing.\cite{vac_eq} In an ideal system there will be at least 1 foot of plumbing between the RGA and TP1, so the maximum value of $S_{RGA}$ is roughly 8.3 liters per second for xenon. Vacuum impedance is different for different molecules and is proportional to one over the square root of the atomic mass, so the maximum value of $S_{RGA}$ for krypton will be roughly 10.4 liters per second.\cite{vac_eq} This puts the nominal value of $Z_1$ at about 21.7 seconds per liter for xenon and 17.3 seconds per liter for krypton.The exact numerical value of $S_{RGA}$ and $Z_1$ are largely unimportant, and when optimizing the system impedances as described in section \ref{sec:impedance}, we will work in units relative to the fully open state, rather than liters per second.
+$S_{RGA}$ is usually dominated by $Z_2$. Depending on the model of pump used, the speed of the turbo pump for xenon is around 50 liters per second. The impedance of cylindrical plumbing with a diameter of 1.5 inches is about $\frac{1}{320} s/L$ per centimeter of plumbing.\cite{vac_eq} In a typical system there will be the equivalent of about 5 feet of plumbing between the RGA and TP1, so the nominal value of $Z_2$ will be roughly 0.48 seconds per liters for xenon, indicating a maximum $S_{RGA}$ of 2.1 liters per second.\cite{vac_eq} This means the fully-open value of $Z_1$ should be about 85 seconds per liter for xenon. The exact numerical value of $S_{RGA}$ and $Z_1$ are largely unimportant, and when optimizing the system impedances as described in section \ref{sec:impedance}, we will work in units relative to the fully open state, rather than liters per second.
 
-The operating principle of cold-trap sampling is that while the xenon gets frozen into the cold-trap, the trace gasses, such as krypton pass through. Another way to put this is that at the output of the cold trap the xenon is frozen to a constant pressure, while krypton mass flow is conserved. In practice, the conservation is not perfect, so we add a throughput constant, $\alpha \equiv Q_{Kr,RGA}/Q_{Kr,CT}$, where $Q_{Kr,CT}$ is the flow rate into the cold trap, and $Q_{Kr,RGA}$ is the equilibrium flow rate of krypton out of the trap, and the flow rate of xenon into the cold-trap ($Q_{Xe,CT}$) is constant. The physical basis of the throughput parameter is not fully understood, but we have put great effort into characterizing it empirically. $Q_{Kr,CT}$ is equal to $Q_{Xe,CT}$ times the concentration of krypton in the xenon sample, $\Phi_{Kr}$. These relations put together, give us the following equation: 
+
+\subsection{Generalized Cold Trap System Response}
+\label{sec:response}
+The operating principle of cold-trap sampling is that while the xenon gets frozen into the cold-trap, the trace gasses, such as krypton pass through. Another way to put this is that at the output of the cold trap the xenon is frozen to a constant pressure, while krypton mass flow is conserved. In practice, the conservation is not perfect, so we add a throughput constant, $\alpha \equiv Q_{Kr,RGA}/Q_{Kr,CT}$, where $Q_{Kr,CT}$ is the flow rate into the cold trap, and $Q_{Kr,RGA}$ is the equilibrium flow rate of krypton out of the trap, and the flow rate of xenon into the cold-trap ($Q_{Xe,CT}$) is constant. $Q_{Kr,CT}$ is equal to $Q_{Xe,CT}$ times the concentration of krypton in the xenon sample, $\Phi_{Kr}$. These relations put together, give us the following equation: 
 \begin{equation}
 Q_{Kr,RGA}=\alpha Q_{Xe,CT}\Phi_{Kr}.
 \end{equation}
@@ -189,12 +203,10 @@ This relation shows the proportionality between partial pressure, and flow-rate 
 \label{eq:krpres2}
 PP_{Kr,eq}=\frac{\alpha}{180}Z_{1}Q_{Xe,CT}\Phi_{Kr}.
 \end{equation}
-This equation replicates equation \ref{eq:basic_analysis} where the calibration constant, $C$, has been replaced with $\frac{\alpha}{180}Z_{1}$. 
 
-\subsection{Transient Response of Cold Trap System}
-From the vacuum equations, we can also find the expected response of the system to an impulse of krypton. To do so, we would like to make the assumption that the RGA volume and the cold trap volume have a vanishingly small internal impedance, which means that the pressure at the input is equal to the pressure at the output. This is reasonable for the RGA volume which is constructed of 1.5 inch plumbing, but the bends in the cold trap add enough impedance to violate the approximation. We find that this approximation is able to produce reasonable results in the limit of small xenon flow rate and small xenon sample size. 
+From the vacuum equations, we can also find the expected response of the system to an impulse of krypton. To do so, we would like to make the assumption that the RGA volume and the cold trap volume have a vanishingly small internal impedance, which means that the pressure at the input is equal to the pressure at the output. This is reasonable for the RGA volume which is constructed of 1.5 inch plumbing. However, we find that the bends in the cold trap plumbing cause this approximation to break down in when the xenon ice extends past the first leg of the trap. The effects of this breakdown will be discussed in a later section, but for now we will remain in the limit of small xenon flow rate and small xenon sample size where the approximation does provide largely valid predictions.
 
-In a volume with no internal impedance , the amount of krypton contained by that volume is defined as $P_{Kr}V$. If the volume is being evacuated at a constant volumetric rate, $S$, while at the same time being sourced by some time-dependent flow rate, $Q(t)$ the amount of krypton will change according to the equation:
+In a volume with no internal impedance, the amount of krypton contained by that volume is defined as $P_{Kr}V$. If the volume is being evacuated at a constant volumetric rate, $S$, while at the same time being sourced by some time-dependent flow rate, $Q(t)$ the amount of krypton will change according to the equation:
 \begin{equation}
 V\frac{dP_{Kr}}{dt}=Q(t)-SP_{Kr}.
 \end{equation}
@@ -219,9 +231,9 @@ and the response time for the RGA volume will be given by:
 \begin{equation}
 \tau_{RGA}=V_{RGA}/S_{RGA}.
 \end{equation}
-The condition $Z_1S_{RGA}=180$ from equation \ref{eq:impconstraint}, combined with the fact that in a typical system, $V_{RGA}\approx V_{CT}$ we see that the RGA volume is expected to respond much more quickly than the cold trap volume. This means that the overall response of the system will be dominated by the response of the cold trap, and the shape of $P_{Kr,RGA}$ will be well approximated by the shape of $P_{Kr,CT}$.
+The condition $Z_1S_{RGA}=180$ from equation \ref{eq:impconstraint}, combined with the fact that in a typical system, $V_{RGA}\approx V_{CT}$, means that the RGA volume is expected to respond much more quickly than the cold trap volume. Therefore the overall response of the system will be dominated by the response of the cold trap, and the shape of $P_{Kr,RGA}$ will be well approximated by the shape of $P_{Kr,CT}$.
 
-A typical flow rate profile for xenon is described by:
+In this document we use flow rate profiles for xenon of the form:
 \begin{equation}
 \label{eq:flowprofile}
 Q_{Xe,CT}(t) =
@@ -240,7 +252,7 @@ If $Q_{Xe,CT}(t)$ is given by equation \ref{eq:flowprofile}, the instantaneous k
 (1-e^{-\frac{T}{\tau_{CT}}})e^{-\frac{t-T}{\tau_{CT}}}& \textrm{ for }  t > T
 \end{cases}
 \end{equation} 
-This is proportional to the shape function, $f_Q(t)$, that was presented in equation \ref{eq:shapefunc}. Applying the response of the RGA volume gives the result:
+Applying the response of the RGA volume gives the result:
 \begin{equation}
 \label{eq:fullresponse}
 \frac{P_{Kr,RGA}(t)}{\Phi Q_0 /S_{RGA}}=
@@ -253,22 +265,44 @@ e^{-\frac{t-T}{\tau_{RGA}}}(1-e^{-\frac{T}{\tau_{RGA}}}-\frac{e^{-\frac{T}{\tau_
 \end{equation} 
 Note that in the limit $\tau_{RGA}<<\tau_{CT}$, the right side of equation \ref{eq:fullresponse} reduces to the right side of equation \ref{eq:CTresponse}.
 
-Equation \ref{eq:CTresponse} does a fairly good job in predicting the shape of $P_{Kr,RGA}$ when $Q_0$ and $Z_1$ are small as seen in figure \ref{fig:RGAtrace_fast}. A fit to equation \ref{eq:CTresponse} produces a best fit time constant of 12.2 seconds. The volume of the cold trap used for this trace is 183.8 cc, which would point to $Z_1=66.7$ seconds per liter and $S_{RGA}=2.70$ liters per second. {\color{red} This is not unreasonable given the length of plumbing between the RGA and the turbo pump in this system is .... Corrected for RGA gain, t45he equilibrium pressure of this trace is $50.8 \pm 0.4$ pTorr. $\Phi$ was known to be $750 \pm 75$ parts per trillion (ppt) in liters of krypton per liter of xenon. The xenon flow rate used was 4.5 Torr liters per second. }
-
+Equation \ref{eq:CTresponse} does a good job in predicting the shape of $P_{Kr,RGA}$ when $Q_0$ and $Z_1$ are small as seen in figure \ref{fig:RGAtrace_fast}. A fit to equation \ref{eq:CTresponse} produces a best fit time constant of 12.2 seconds. The volume of the cold trap used for this trace is 183.8 cc, which would point to $Z_1=66.7$ seconds per liter and $S_{RGA}=2.70$ liters per second. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{Figures/RGATrace_fit_fast.png}
-\caption{RGA trace with nominal impedance settings.}
+\caption{RGA trace with nominal impedance settings. Corrected for RGA gain, the equilibrium pressure of this trace is $50.8 \pm 0.4$ pTorr. $\Phi$ was known to be $750 \pm 75$ parts per trillion (ppt) in liters of krypton per liter of xenon. The xenon flow rate used was 0.36 standard liters per minute (SLM). }
 \label{fig:RGAtrace_fast}
 \end{figure}
 
 
-\subsection{Entrapment of Krypton}
-Fitting the krypton pressure trace, $P_{Kr,RGA}(t)$ to equation \ref{eq:CTresponse} breaks down at high xenon flow rates and high system impedances. We don't know the physical cause of this breakdown, but it is likely tied to the krypton throughput parameter, $\alpha$, that was introduced in section \ref{sec:steadystate}. Consider the pressure trace shown in figure \ref{fig:RGAtrace_slow}; the xenon flow rate, $Q_0$ and krypton concentration, $\Phi$ were identical to the krypton trace in figure \ref{fig:RGAtrace_fast}, and the impedance, $Z_1$ was set to be 45 time higher. This trace deviates significantly from what would be expected by increasing $Z_1$ in equation \ref{fig:CTresponse}. Both the system response time and equilibrium pressure are expected to increase proportional to $Z_1$ from equations \ref{eq:CTtime} and \ref{eq:krpres2}, but had a significantly smaller increase. $PP_{Kr,eq}$ increased from $50.8 \pm 0.4$ to $399.9\pm 1.7$ pTorr; a factor of 7.9. The overall response time, $\tau$, increased from $12.7 \pm 0.7$ to $93.4 \pm 1.8$ seconds; a factor of 7.4. 
+
+
+
+\section{Actual Behavior of a Cold Trap System}
+The vacuum approximation is not perfect, and there are large deviations from the molecular flow model presented in the previous section. These deviations arise from the fact that the cold trap itself is not in equilibrium while the xenon is flowing. The input of the trap has laminar xenon flow where the krypton is interacting primarily gaseous xenon atoms, while at the output of the trap, the xenon is closer to the molecular flow regime, and the krypton atoms will be also interacting with the stainless steel plumbing. More importantly, there is a transition region where the xenon is actively being frozen. This rapid, even violent, phase transition of the xenon has complicated effects on the flow of krypton through the trap, and these effects are found to be dependent upon both the system impedances and the input xenon flow rate.
+
+\subsection{Ice Formation}
+The xenon ice forms in a short segment of plumbing relative to the approximately one foot length of the cold trap. The enthalpy of sublimation for xenon is about 15.95 kJ/mol at 77 kelvin.\cite{vaporpressure}. There is an additional 2.73 kJ/mol required to bring the xenon gas temperature down from 295 to 77 kelvin. A 0.36 SLM flow rate is equal to 0.267 mmol/sec of xenon, which requires 5.0 Watts to freeze. If we take the thermal conductance of stainless steel to be 10 W/m K, the maximum cooling power of a 12.7 mm diameter, 1.24 mm thick cold trap will be 70 W/mm. 
+
+We must also consider the heat transfer from the LN to the stainless steel trap. The heat transfer rate from LN to a stainless steel surface is highly dependent upon the temperature difference between the bulk LN and the surface. This temperature dependance has a maximum, referred to as the critical heat flux, where the LN changes from ``nucleate boiling'' to ``film boiling''. Film boiling takes place when the LN boils rapidly enough to create an insulating layer, or ``film'', of nitrogen gas between the LN bath and the stainless steel surface. The critical heat flux of Stainless steel to LN is on the order of 10 W/cm$^2$, putting the maximum heat transfer to our 12.7 mm diameter cold trap at about 4 W/mm, making it the limiting factor in the heat transfer to the plumbing.\cite{LNheatflux}
+
+The above estimates of the heat transfer indicate that at flow rates $<1$ SLM, all of the xenon should be frozen within the first centimeter or so of cold plumbing. We can approximately measure the length of the ice-forming region in two ways. First, the length of this region is inferred by observing the bubble formation within the liquid nitrogen bath. As the xenon flow is frozen inside of the trap the heat is transferred to the LN bath, and the  nitrogen that is in contact with the ice forming region boils. In order to visually inspect the formation of the ice, we also installed a quartz window on the input and output of a cold trap. At low flow rates ($<1$ SLM), both of these methods indicate that the ice formation region is less than about 1 cm in length. When viewing the ice formation through a window, there is a clear collar of xenon ice that forms in the input side of the trap at the level of the LN bath, and there is no visible ice formation anywhere else. When observing the outside of the trap, the LN appears to boil where the plumbing enters the bath but nowhere else. 
+
+At higher flow rates ($>1$ SLM), the ice no longer forms a collar, but rather a sleeve along the inside of the trap. This is likely due to the xenon ice forming an insulating layer over the stainless steel, thereby reducing the cooling power of that segment of plumbing to the point where it is no longer able to freeze the xenon. In the high flow regime, the LN will still only boil along a short segment of plumbing, but this segment can be seen to migrate along the trap from input to output. Eventually, enough of the trap surface is covered that the trap is no longer able to maintain a constant xenon temperature at the output and the xenon pressure at the RGA rises. This can be contrasted to the behavior at low flow rates, where the xenon collar will eventually grow thick enough to physically clog the trap without the RGA pressures changing at all.
+
+\subsection{Krypton Retention: Flow Rate Dependance}
+As mentioned previously, there are two distinct regimes of xenon flow in a cold trap sampling system: the low flow regime in which all of the xenon ice is formed within millimeters of the LN surface level, and the high flow regime in which the xenon ice forms a sleeve, which eventually can reach the output side of the trap and cause the RGA xenon pressure to rise. In the low flow regime, the response of the sold trap system to flow rate is extremely linear. However, in the high flow regime this linearity breaks down. As the sleeve rounds bends in the trap the krypton pressure at the RGA can be seen to drop from the exponential response predicted in equation \ref{eq:CTresponse}. It is not clear what the physical cause or causes of this deviation are, but the overall effect is a lower krypton pressure. 
+
+
+
+
+
+
+\subsection{Krypton Retention: Impedance Dependance}
+Fitting the krypton pressure trace, $P_{Kr,RGA}(t)$ to equation \ref{eq:CTresponse} breaks down at high xenon flow rates and high system impedances. We don't know the physical cause of this breakdown, but it is likely tied to the krypton throughput parameter, $\alpha$, that was introduced in section \ref{sec:response}. Consider the pressure trace shown in figure \ref{fig:RGAtrace_slow}; the xenon flow rate, $Q_0$ and krypton concentration, $\Phi$ were identical to the krypton trace in figure \ref{fig:RGAtrace_fast}, and the impedance, $Z_1$ was set to be 45 time higher. This trace deviates significantly from what would be expected by increasing $Z_1$ in equation \ref{fig:CTresponse}. Both the system response time and equilibrium pressure are expected to increase proportional to $Z_1$ from equations \ref{eq:CTtime} and \ref{eq:krpres2}, but had a significantly smaller increase. $PP_{Kr,eq}$ increased from $50.8 \pm 0.4$ to $399.9\pm 1.7$ pTorr; a factor of 7.9. The overall response time, $\tau$, increased from $12.7 \pm 0.7$ to $93.4 \pm 1.8$ seconds; a factor of 7.4. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{Figures/RGAtrace_fit_slow_wexp.png}
-\caption{RGA trace with 45 times nominal impedance settings. }
+\caption{RGA trace with 45x impedance settings. }
 \label{fig:RGAtrace_slow}
 \end{figure}
 

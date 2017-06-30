@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{vac_eq}
+N.~Marquardt  (1999).
+
+\bibitem{vaporpressure}
+A.~Ferreira, L.~Lobo, {\it The Journal of Chemical Thermodynamics\/} {\bf 40},
+  1621  (2008).
+
 \bibitem{sampling_doug}
 D.~S. Leonard, {\it et~al.\/}, {\it Nucl. Instrum. Meth.\/} {\bf A621}, 678
   (2010).
@@ -7,14 +14,11 @@ D.~S. Leonard, {\it et~al.\/}, {\it Nucl. Instrum. Meth.\/} {\bf A621}, 678
 \bibitem{sampling_dm}
 A.~Dobi, {\it et~al.\/}, {\it Nucl. Instrum. Meth.\/} {\bf A665}, 1 (2011).
 
+\bibitem{LNheatflux}
+E.~Roth, Nucleation and heat transfer in liquid nitrogen, Ph.D. thesis,
+  Portland State University (1993).
+
 \bibitem{sampling_EXO}
 A.~Dobi, {\it et~al.\/}, {\it Nucl. Instrum. Meth.\/} {\bf A675}, 40 (2012).
-
-\bibitem{vac_eq}
-N.~Marquardt  (1999).
-
-\bibitem{vaporpressure}
-A.~Ferreira, L.~Lobo, {\it The Journal of Chemical Thermodynamics\/} {\bf 40},
-  1621  (2008).
 
 \end{thebibliography}

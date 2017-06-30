@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 MAY 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 JUN 2017 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -382,7 +382,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 
-<Figures/Cold_Trap_cartoon.png, id=84, 1353.055pt x 790.955pt>
+<Figures/Cold_Trap_cartoon.png, id=96, 1353.055pt x 790.955pt>
 File: Figures/Cold_Trap_cartoon.png Graphic file (type png)
 
 <use Figures/Cold_Trap_cartoon.png>
@@ -397,7 +397,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/ColdTrap_diagram.png, id=97, 585.18625pt x 359.3425pt>
+<Figures/ColdTrap_diagram.png, id=109, 585.18625pt x 359.3425pt>
 File: Figures/ColdTrap_diagram.png Graphic file (type png)
 
 <use Figures/ColdTrap_diagram.png>
@@ -417,143 +417,148 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
  [5] [6]
 [7]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 176.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 
 
-LaTeX Warning: Reference `sec:impedance' on page 8 undefined on input line 176.
+LaTeX Warning: Reference `sec:calibrations' on page 8 undefined on input line 1
+69.
 
 
-[8] [9] [10] [11] <Figures/RGATrace_fit_fast.png, id=198, 501.875pt x 401.5pt>
+LaTeX Warning: Reference `sec:impedance' on page 8 undefined on input line 171.
+
+
+[8]
+
+LaTeX Warning: Reference `sec:impedance' on page 9 undefined on input line 187.
+
+
+[9] [10] [11] <Figures/RGATrace_fit_fast.png, id=205, 501.875pt x 401.5pt>
 File: Figures/RGATrace_fit_fast.png Graphic file (type png)
 
 <use Figures/RGATrace_fit_fast.png>
-Package pdftex.def Info: Figures/RGATrace_fit_fast.png used on input line 260.
+Package pdftex.def Info: Figures/RGATrace_fit_fast.png used on input line 271.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
+ [12] [13 <./Figures/RGATrace_fit_fast.png (PNG copy)>] [14] [15]
 
+LaTeX Warning: Reference `fig:CTresponse' on page 16 undefined on input line 30
+1.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:CTresponse' on page 12 undefined on input line 26
-7.
-
-<Figures/RGAtrace_fit_slow_wexp.png, id=205, 501.875pt x 401.5pt>
+<Figures/RGAtrace_fit_slow_wexp.png, id=238, 501.875pt x 401.5pt>
 File: Figures/RGAtrace_fit_slow_wexp.png Graphic file (type png)
 
 <use Figures/RGAtrace_fit_slow_wexp.png>
 Package pdftex.def Info: Figures/RGAtrace_fit_slow_wexp.png used on input line 
-270.
+304.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [12]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./Figures/RGATrace_fit_fast.png (PNG copy)>]
-<Figures/RGA_trace.png, id=226, 501.875pt x 401.5pt>
+[16] <Figures/RGA_trace.png, id=248, 501.875pt x 401.5pt>
 File: Figures/RGA_trace.png Graphic file (type png)
 
 <use Figures/RGA_trace.png>
-Package pdftex.def Info: Figures/RGA_trace.png used on input line 288.
+Package pdftex.def Info: Figures/RGA_trace.png used on input line 322.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14 <./Figures/RGAtrace_fit_slow_wexp.png (PNG copy)>] [15 <./Figures/RGA_trace
-.png (PNG copy)>] [16]
-<Figures/Lin_avg_Attila.png, id=245, 736.7525pt x 507.8975pt>
+[17 <./Figures/RGAtrace_fit_slow_wexp.png (PNG copy)>] [18 <./Figures/RGA_trace
+.png (PNG copy)>] [19]
+<Figures/Lin_avg_Attila.png, id=269, 736.7525pt x 507.8975pt>
 File: Figures/Lin_avg_Attila.png Graphic file (type png)
 
 <use Figures/Lin_avg_Attila.png>
-Package pdftex.def Info: Figures/Lin_avg_Attila.png used on input line 325.
+Package pdftex.def Info: Figures/Lin_avg_Attila.png used on input line 359.
 (pdftex.def)             Requested size: 455.24408pt x 313.83147pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18 <./Figures/Lin_avg_Attila.png>]
+[20] [21 <./Figures/Lin_avg_Attila.png>]
 
-LaTeX Warning: Reference `sec:calibrations' on page 19 undefined on input line 
-363.
+LaTeX Warning: Reference `sec:calibrations' on page 22 undefined on input line 
+397.
 
-<Figures/RGATrace_int.png, id=270, 501.875pt x 401.5pt>
+<Figures/RGATrace_int.png, id=296, 501.875pt x 401.5pt>
 File: Figures/RGATrace_int.png Graphic file (type png)
 
 <use Figures/RGATrace_int.png>
-Package pdftex.def Info: Figures/RGATrace_int.png used on input line 369.
+Package pdftex.def Info: Figures/RGATrace_int.png used on input line 403.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/LinPlot0217.png, id=271, 501.875pt x 401.5pt>
+<Figures/LinPlot0217.png, id=297, 501.875pt x 401.5pt>
 File: Figures/LinPlot0217.png Graphic file (type png)
 
 <use Figures/LinPlot0217.png>
-Package pdftex.def Info: Figures/LinPlot0217.png used on input line 375.
+Package pdftex.def Info: Figures/LinPlot0217.png used on input line 409.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/RGA_Noise_v_PP.png, id=277, 501.875pt x 401.5pt>
+<Figures/RGA_Noise_v_PP.png, id=303, 501.875pt x 401.5pt>
 File: Figures/RGA_Noise_v_PP.png Graphic file (type png)
 
 <use Figures/RGA_Noise_v_PP.png>
-Package pdftex.def Info: Figures/RGA_Noise_v_PP.png used on input line 394.
+Package pdftex.def Info: Figures/RGA_Noise_v_PP.png used on input line 428.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./Figures/RGATrace_int.png (PNG copy)> <./Figures/LinPlot0217.png (PN
-G copy)>] [21 <./Figures/RGA_Noise_v_PP.png (PNG copy)>]
-<Figures/CDEM_gain_noise.png, id=299, 501.875pt x 401.5pt>
+[22] [23 <./Figures/RGATrace_int.png (PNG copy)> <./Figures/LinPlot0217.png (PN
+G copy)>] [24 <./Figures/RGA_Noise_v_PP.png (PNG copy)>]
+<Figures/CDEM_gain_noise.png, id=323, 501.875pt x 401.5pt>
 File: Figures/CDEM_gain_noise.png Graphic file (type png)
 
 <use Figures/CDEM_gain_noise.png>
-Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 414.
+Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 448.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] [23 <./Figures/CDEM_gain_noise.png (PNG copy)>]
-<Figures/RGAtrace_ideal.png, id=312, 501.875pt x 401.5pt>
+[25] [26 <./Figures/CDEM_gain_noise.png (PNG copy)>]
+<Figures/RGAtrace_ideal.png, id=337, 501.875pt x 401.5pt>
 File: Figures/RGAtrace_ideal.png Graphic file (type png)
 
 <use Figures/RGAtrace_ideal.png>
-Package pdftex.def Info: Figures/RGAtrace_ideal.png used on input line 426.
+Package pdftex.def Info: Figures/RGAtrace_ideal.png used on input line 460.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
-<Figures/FlowResponse.png, id=313, 562.1pt x 421.575pt>
+<Figures/FlowResponse.png, id=338, 562.1pt x 421.575pt>
 File: Figures/FlowResponse.png Graphic file (type png)
 
 <use Figures/FlowResponse.png>
-Package pdftex.def Info: Figures/FlowResponse.png used on input line 431.
+Package pdftex.def Info: Figures/FlowResponse.png used on input line 465.
 (pdftex.def)             Requested size: 455.24408pt x 341.43527pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./Figures/RGAtrace_ideal.png (PNG copy)>]
+[27 <./Figures/RGAtrace_ideal.png (PNG copy)>]
 
-LaTeX Warning: Reference `fig:SLACpid' on page 25 undefined on input line 450.
+LaTeX Warning: Reference `fig:SLACpid' on page 28 undefined on input line 484.
 
-[25 <./Figures/FlowResponse.png (PNG copy)>]
-<Figures/Mixing_diagram.png, id=325, 397.485pt x 210.7875pt>
+[28 <./Figures/FlowResponse.png (PNG copy)>]
+<Figures/Mixing_diagram.png, id=349, 397.485pt x 210.7875pt>
 File: Figures/Mixing_diagram.png Graphic file (type png)
 
 <use Figures/Mixing_diagram.png>
-Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 454.
+Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 488.
 (pdftex.def)             Requested size: 455.24408pt x 241.42596pt.
- [26 <./Figures/Mixing_diagram.png>] [27]
+ [29 <./Figures/Mixing_diagram.png>] [30]
 (./Sampling_Manual.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 494.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 494.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
+ [31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
  (./Sampling_Manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 494.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 494.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
 Package rerunfilecheck Info: File `Sampling_Manual.out' has not changed.
-(rerunfilecheck)             Checksum: 79B5E06140A743C08DD45B9DA7A44834;1281.
+(rerunfilecheck)             Checksum: ABCF36BB4B267BD057DFDE9EA9B44387;1520.
 
 
 LaTeX Warning: There were undefined references.
@@ -561,16 +566,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 494.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 528.
  ) 
 Here is how much of TeX's memory you used:
- 7959 strings out of 493089
- 122462 string characters out of 6134842
- 215541 words of memory out of 5000000
- 11244 multiletter control sequences out of 15000+600000
+ 7972 strings out of 493089
+ 122605 string characters out of 6134842
+ 215872 words of memory out of 5000000
+ 11249 multiletter control sequences out of 15000+600000
  25768 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,40p,1482b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,40p,1125b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -585,10 +590,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on Sampling_Manual.pdf (28 pages, 521346 bytes).
+Output written on Sampling_Manual.pdf (31 pages, 529549 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 379 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
