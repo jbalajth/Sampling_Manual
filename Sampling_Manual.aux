@@ -49,6 +49,7 @@
 \newlabel{eq:xepres1}{{6}{9}{Vacuum Impedances}{equation.3.6}{}}
 \newlabel{eq:impconstraint}{{7}{9}{Vacuum Impedances}{equation.3.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Setting System Impedance}{10}{subsection.3.2}}
+\newlabel{sec:imp_set}{{3.2}{10}{Setting System Impedance}{subsection.3.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Adjustment of impedance to 19x state. Region \emph  {1} shows the fully-open, 1x impedance state of the system. In region \emph  {II}, $Z_1$ is manually reduced using IV1, until region \emph  {III}, where $PP_{Xe62}$ has dropped to 1/19$^{th}$ of its value in the 1x impedance state. In region \emph  {IV}, $PP_{Xe62}$ is carefully increased back to its initial value by slowing down the effective pumping speed, $S_{RGA}$. In region \emph  {V}, $PP_{Xe62}$ has returned to its initial value, and the system is in the 19x impedance state. \relax }}{11}{figure.caption.3}}
 \newlabel{fig:imp_adj}{{3}{11}{Adjustment of impedance to 19x state. Region \emph {1} shows the fully-open, 1x impedance state of the system. In region \emph {II}, $Z_1$ is manually reduced using IV1, until region \emph {III}, where $PP_{Xe62}$ has dropped to 1/19$^{th}$ of its value in the 1x impedance state. In region \emph {IV}, $PP_{Xe62}$ is carefully increased back to its initial value by slowing down the effective pumping speed, $S_{RGA}$. In region \emph {V}, $PP_{Xe62}$ has returned to its initial value, and the system is in the 19x impedance state. \relax }{figure.caption.3}{}}
 \citation{sampling_doug}
@@ -57,6 +58,7 @@
 \newlabel{sec:response}{{3.3}{12}{Generalized Cold Trap System Response}{subsection.3.3}{}}
 \newlabel{eq:krpres1}{{9}{12}{Generalized Cold Trap System Response}{equation.3.9}{}}
 \newlabel{eq:krpres2}{{10}{12}{Generalized Cold Trap System Response}{equation.3.10}{}}
+\newlabel{eq:expdiff}{{11}{13}{Generalized Cold Trap System Response}{equation.3.11}{}}
 \newlabel{eq:CTtime}{{14}{14}{Generalized Cold Trap System Response}{equation.3.14}{}}
 \newlabel{eq:flowprofile}{{16}{14}{Generalized Cold Trap System Response}{equation.3.16}{}}
 \newlabel{eq:CTresponse1}{{17}{14}{Generalized Cold Trap System Response}{equation.3.17}{}}
@@ -65,89 +67,139 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces RGA trace with nominal impedance settings. Corrected for RGA gain, the equilibrium pressure of this trace is $50.8 \pm 0.4$ pTorr. $\Phi $ was known to be $750 \pm 75$ parts per trillion (ppt) in liters of krypton per liter of xenon. The xenon flow rate used was 0.36 standard liters per minute (SLM). \relax }}{15}{figure.caption.4}}
 \newlabel{fig:RGAtrace_fast}{{4}{15}{RGA trace with nominal impedance settings. Corrected for RGA gain, the equilibrium pressure of this trace is $50.8 \pm 0.4$ pTorr. $\Phi $ was known to be $750 \pm 75$ parts per trillion (ppt) in liters of krypton per liter of xenon. The xenon flow rate used was 0.36 standard liters per minute (SLM). \relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Actual Behavior of a Cold Trap System}{16}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Cold Trap Geometry}{17}{subsection.4.1}}
+\newlabel{sec:geometry}{{4.1}{17}{Cold Trap Geometry}{subsection.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Various cold trap geometries considered. We will refer to these geometries as follows: 1- Triple trap (0.5 inch). 2- Stocking trap. 3- Coil trap. 4- U trap (0.5 inch). 5- Boot trap. 6- U trap (1.5 inch). Not shown: 3/8 inch U trap. 1.5 inch triple trap. \relax }}{18}{figure.caption.5}}
+\newlabel{fig:geometries}{{5}{18}{Various cold trap geometries considered. We will refer to these geometries as follows: 1- Triple trap (0.5 inch). 2- Stocking trap. 3- Coil trap. 4- U trap (0.5 inch). 5- Boot trap. 6- U trap (1.5 inch). Not shown: 3/8 inch U trap. 1.5 inch triple trap. \relax }{figure.caption.5}{}}
+\newlabel{tab:geo}{{4.1}{18}{Cold Trap Geometry}{figure.caption.5}{}}
 \citation{vaporpressure}
 \citation{LNheatflux}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Ice Formation}{17}{subsection.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Flow Rate Dependance}{18}{subsection.4.2}}
-\newlabel{fig:KrDrop0p5}{{5a}{19}{0.5 inch trap.\relax }{figure.caption.5}{}}
-\newlabel{sub@fig:KrDrop0p5}{{a}{19}{0.5 inch trap.\relax }{figure.caption.5}{}}
-\newlabel{fig:KrDrop1p5}{{5b}{19}{1.5 inch trap.\relax }{figure.caption.5}{}}
-\newlabel{sub@fig:KrDrop1p5}{{b}{19}{1.5 inch trap.\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Krypton pressure traces resulting from high and low xenon flow regimes. Note the two sharp kinks in the 0.5 inch trend. These correspond to sharp 90-degree bends in the tubing of the trap which were formed using a standard tube-bender. The rounded turns in the 1.5 inch trend correspond to the more gentle bends in the 1.5 inch tubing. These bends are built by welding two elbow pieces together. These measurements were taken in the 15x impedance state.\relax }}{19}{figure.caption.5}}
-\newlabel{fig:KrDrop}{{5}{19}{Krypton pressure traces resulting from high and low xenon flow regimes. Note the two sharp kinks in the 0.5 inch trend. These correspond to sharp 90-degree bends in the tubing of the trap which were formed using a standard tube-bender. The rounded turns in the 1.5 inch trend correspond to the more gentle bends in the 1.5 inch tubing. These bends are built by welding two elbow pieces together. These measurements were taken in the 15x impedance state.\relax }{figure.caption.5}{}}
-\newlabel{fig:flow_traces_0p5}{{6a}{20}{0.5 inch trap.\relax }{figure.caption.6}{}}
-\newlabel{sub@fig:flow_traces_0p5}{{a}{20}{0.5 inch trap.\relax }{figure.caption.6}{}}
-\newlabel{fig:flow_traces_1p5}{{6b}{20}{1.5 inch trap.\relax }{figure.caption.6}{}}
-\newlabel{sub@fig:flow_traces_1p5}{{b}{20}{1.5 inch trap.\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Krypton RGA traces normalized to xenon flow rate at various flow rate settings. These traces are all measurements of identical xenon, with an impedance setting of 15x. The response of the system to flow rate appears to be largely linear until about 2 SLM. After this point the Kr trace falls increasingly down from the low-flow traces.\relax }}{20}{figure.caption.6}}
-\newlabel{fig:flow_traces}{{6}{20}{Krypton RGA traces normalized to xenon flow rate at various flow rate settings. These traces are all measurements of identical xenon, with an impedance setting of 15x. The response of the system to flow rate appears to be largely linear until about 2 SLM. After this point the Kr trace falls increasingly down from the low-flow traces.\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Peak krypton RGA pressure as a function of flow rate, and at varying impedance settings. The data for this plot was taken with a 0.5 inch diameter cold trap.\relax }}{21}{figure.caption.7}}
-\newlabel{fig:RGAtrace_ideal}{{7}{21}{Peak krypton RGA pressure as a function of flow rate, and at varying impedance settings. The data for this plot was taken with a 0.5 inch diameter cold trap.\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces An example of fitting an exponential response to the first part of $PP_{Kr}(t)$. This is the same data plotted in figure \ref  {fig:KrDrop0p5}\relax }}{22}{figure.caption.8}}
-\newlabel{fig:turn_over}{{8}{22}{An example of fitting an exponential response to the first part of $PP_{Kr}(t)$. This is the same data plotted in figure \ref {fig:KrDrop0p5}\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Impedance Dependance}{22}{subsection.4.3}}
-\newlabel{fig:flowresponse1x}{{9a}{23}{1x impedance.\relax }{figure.caption.9}{}}
-\newlabel{sub@fig:flowresponse1x}{{a}{23}{1x impedance.\relax }{figure.caption.9}{}}
-\newlabel{fig:flowresponse_15x}{{9b}{23}{15x impedance.\relax }{figure.caption.9}{}}
-\newlabel{sub@fig:flowresponse_15x}{{b}{23}{15x impedance.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of the flat-top averaged $PP_{Kr,eq}$ the extrapolated equilibrium value calculated from a fit to an exponential response.\relax }}{23}{figure.caption.9}}
-\newlabel{fig:flowresponse}{{9}{23}{Comparison of the flat-top averaged $PP_{Kr,eq}$ the extrapolated equilibrium value calculated from a fit to an exponential response.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces RGA trace with 45x impedance settings. \relax }}{24}{figure.caption.10}}
-\newlabel{fig:RGAtrace_slow}{{10}{24}{RGA trace with 45x impedance settings. \relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Linearity of the characteristic response time, $\tau $, and the equilibrium krypton pressure, $PP_{Kr,eq}$.\relax }}{25}{figure.caption.11}}
-\newlabel{fig:impresponse_lin}{{11}{25}{Linearity of the characteristic response time, $\tau $, and the equilibrium krypton pressure, $PP_{Kr,eq}$.\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Post-Flow Behavior}{25}{subsection.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}System Geometry}{25}{subsection.4.5}}
-\newlabel{sec:geometry}{{4.5}{25}{System Geometry}{subsection.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Ice Formation Procedure}{25}{subsection.4.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis Scheme}{25}{section.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Left-over method of calculating $\overline  {\alpha }$. The decreasing trend in the throughput indicates that error in the impedance measurements cannot fully explain the observed deviation from equation \ref  {eq:CTresponse}. \relax }}{26}{figure.caption.12}}
-\newlabel{fig:alpha}{{12}{26}{Left-over method of calculating $\overline {\alpha }$. The decreasing trend in the throughput indicates that error in the impedance measurements cannot fully explain the observed deviation from equation \ref {eq:CTresponse}. \relax }{figure.caption.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \relax }}{27}{figure.caption.13}}
-\newlabel{fig:impresponse}{{13}{27}{\relax }{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The RGA-measured partial pressures of the 84 amu krypton peak and doubly ionized Xe-124 which appears as a peak at 62 amu. The four time intervals indicate: static baseline, rising Kr trace, steady-state Kr pressure, and post-flow Kr pressure fall.\relax }}{28}{figure.caption.14}}
-\newlabel{fig:RGAtrace}{{14}{28}{The RGA-measured partial pressures of the 84 amu krypton peak and doubly ionized Xe-124 which appears as a peak at 62 amu. The four time intervals indicate: static baseline, rising Kr trace, steady-state Kr pressure, and post-flow Kr pressure fall.\relax }{figure.caption.14}{}}
-\newlabel{eq:basic_analysis}{{20}{28}{Analysis Scheme}{equation.5.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Formation of Xenon Ice}{19}{subsection.4.2}}
+\newlabel{fig:plugstart}{{6a}{21}{Ice collar forming.\relax }{figure.caption.6}{}}
+\newlabel{sub@fig:plugstart}{{a}{21}{Ice collar forming.\relax }{figure.caption.6}{}}
+\newlabel{fig:plugfull}{{6b}{21}{Fully clogged trap\relax }{figure.caption.6}{}}
+\newlabel{sub@fig:plugfull}{{b}{21}{Fully clogged trap\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Two images of how ice is formed in a cold trap. The left image shows a thick collar of ice beginning to form. This collar contains $>100$ grams of xenon ice. The right shows the collar after it has fully clogged the 1.5 inch diameter cold trap. This plug has roughly 400 grams of xenon is.\relax }}{21}{figure.caption.6}}
+\newlabel{fig:iceplug}{{6}{21}{Two images of how ice is formed in a cold trap. The left image shows a thick collar of ice beginning to form. This collar contains $>100$ grams of xenon ice. The right shows the collar after it has fully clogged the 1.5 inch diameter cold trap. This plug has roughly 400 grams of xenon is.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Break-through of xenon to the RGA, through a 0.5 inch trap. 4 SLM xenon flow was started at t=0 seconds, and xenon breakthrough occurred $300\pm 5$ seconds later. This means that about 120 grams of xenon ice formed before flow was shut off; approximately double the amount in an ice plug formed in the low flow regime.\relax }}{22}{figure.caption.7}}
+\newlabel{fig:breakthrough}{{7}{22}{Break-through of xenon to the RGA, through a 0.5 inch trap. 4 SLM xenon flow was started at t=0 seconds, and xenon breakthrough occurred $300\pm 5$ seconds later. This means that about 120 grams of xenon ice formed before flow was shut off; approximately double the amount in an ice plug formed in the low flow regime.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Data from an analysis run with poorly controlled xenon pressure. The krypton-83 and -84 lines, as well as a baseline tracer at 87 amu all tracked the drifting xenon pressure exactly. \relax }}{23}{figure.caption.8}}
+\newlabel{fig:correlatednoise}{{8}{23}{Data from an analysis run with poorly controlled xenon pressure. The krypton-83 and -84 lines, as well as a baseline tracer at 87 amu all tracked the drifting xenon pressure exactly. \relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Krypton trace using method 1 and method 2 of ice kernel formation using 2.5 SLM xenon flow, and a 90x impedance setting. The method 2 trace begins on the trend as method 1, but sees a sharp turn over and maxes out at only 63\% of the method 1 peak. \relax }}{25}{figure.caption.9}}
+\newlabel{fig:iceformkrloss}{{9}{25}{Krypton trace using method 1 and method 2 of ice kernel formation using 2.5 SLM xenon flow, and a 90x impedance setting. The method 2 trace begins on the trend as method 1, but sees a sharp turn over and maxes out at only 63\% of the method 1 peak. \relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Flow Rate Dependance}{25}{subsection.4.3}}
+\newlabel{sec:flow_real}{{4.3}{25}{Flow Rate Dependance}{subsection.4.3}{}}
+\newlabel{fig:KrDrop0p5}{{10a}{26}{0.5 inch trap.\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:KrDrop0p5}{{a}{26}{0.5 inch trap.\relax }{figure.caption.10}{}}
+\newlabel{fig:KrDrop1p5}{{10b}{26}{1.5 inch trap.\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:KrDrop1p5}{{b}{26}{1.5 inch trap.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Krypton pressure traces resulting from high and low xenon flow regimes. Note the two sharp kinks in the 0.5 inch trend. These correspond to sharp 90-degree bends in the tubing of the trap which were formed using a standard tube-bender. The rounded turns in the 1.5 inch trend correspond to the more gentle bends in the 1.5 inch tubing. These bends are built by welding two elbow pieces together. These measurements were taken in the 15x impedance state.\relax }}{26}{figure.caption.10}}
+\newlabel{fig:KrDrop}{{10}{26}{Krypton pressure traces resulting from high and low xenon flow regimes. Note the two sharp kinks in the 0.5 inch trend. These correspond to sharp 90-degree bends in the tubing of the trap which were formed using a standard tube-bender. The rounded turns in the 1.5 inch trend correspond to the more gentle bends in the 1.5 inch tubing. These bends are built by welding two elbow pieces together. These measurements were taken in the 15x impedance state.\relax }{figure.caption.10}{}}
+\newlabel{fig:flow_traces_0p5}{{11a}{27}{0.5 inch trap.\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:flow_traces_0p5}{{a}{27}{0.5 inch trap.\relax }{figure.caption.11}{}}
+\newlabel{fig:flow_traces_1p5}{{11b}{27}{1.5 inch trap.\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:flow_traces_1p5}{{b}{27}{1.5 inch trap.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Krypton RGA traces normalized to xenon flow rate at various flow rate settings. These traces are all measurements of identical xenon, with an impedance setting of 15x. The response of the system to flow rate appears to be largely linear until about 2 SLM. After this point the Kr trace falls increasingly down from the low-flow traces.\relax }}{27}{figure.caption.11}}
+\newlabel{fig:flow_traces}{{11}{27}{Krypton RGA traces normalized to xenon flow rate at various flow rate settings. These traces are all measurements of identical xenon, with an impedance setting of 15x. The response of the system to flow rate appears to be largely linear until about 2 SLM. After this point the Kr trace falls increasingly down from the low-flow traces.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Peak krypton RGA pressure as a function of flow rate, and at varying impedance settings. The data for this plot was taken with a 0.5 inch diameter cold trap.\relax }}{28}{figure.caption.12}}
+\newlabel{fig:RGAtrace_ideal}{{12}{28}{Peak krypton RGA pressure as a function of flow rate, and at varying impedance settings. The data for this plot was taken with a 0.5 inch diameter cold trap.\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces An example of fitting an exponential response to the first part of $PP_{Kr}(t)$. This is the same data plotted in figure \ref  {fig:KrDrop0p5}\relax }}{29}{figure.caption.13}}
+\newlabel{fig:turn_over}{{13}{29}{An example of fitting an exponential response to the first part of $PP_{Kr}(t)$. This is the same data plotted in figure \ref {fig:KrDrop0p5}\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Impedance Dependance}{29}{subsection.4.4}}
+\newlabel{sec:impedance_real}{{4.4}{29}{Impedance Dependance}{subsection.4.4}{}}
+\newlabel{fig:flowresponse1x}{{14a}{30}{1x impedance.\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:flowresponse1x}{{a}{30}{1x impedance.\relax }{figure.caption.14}{}}
+\newlabel{fig:flowresponse_15x}{{14b}{30}{15x impedance.\relax }{figure.caption.14}{}}
+\newlabel{sub@fig:flowresponse_15x}{{b}{30}{15x impedance.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comparison of the flat-top averaged $PP_{Kr,eq}$ the extrapolated equilibrium value calculated from a fit to an exponential response.\relax }}{30}{figure.caption.14}}
+\newlabel{fig:flowresponse}{{14}{30}{Comparison of the flat-top averaged $PP_{Kr,eq}$ the extrapolated equilibrium value calculated from a fit to an exponential response.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces RGA trace with 45x impedance settings. \relax }}{31}{figure.caption.15}}
+\newlabel{fig:RGAtrace_slow}{{15}{31}{RGA trace with 45x impedance settings. \relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Linearity of the characteristic response time, $\tau $, and the equilibrium krypton pressure, $PP_{Kr,eq}$.\relax }}{32}{figure.caption.16}}
+\newlabel{fig:impresponse_lin}{{16}{32}{Linearity of the characteristic response time, $\tau $, and the equilibrium krypton pressure, $PP_{Kr,eq}$.\relax }{figure.caption.16}{}}
+\newlabel{eq:expdiff2}{{20}{32}{Impedance Dependance}{equation.4.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Left-over method of calculating $\overline  {\alpha }$. The decreasing trend in the throughput indicates that error in the impedance measurements cannot fully explain the observed deviation from equation \ref  {eq:CTresponse}. \relax }}{33}{figure.caption.17}}
+\newlabel{fig:alpha}{{17}{33}{Left-over method of calculating $\overline {\alpha }$. The decreasing trend in the throughput indicates that error in the impedance measurements cannot fully explain the observed deviation from equation \ref {eq:CTresponse}. \relax }{figure.caption.17}{}}
+\newlabel{eq:strap}{{24}{34}{Impedance Dependance}{equation.4.24}{}}
+\newlabel{eq:expdiff3}{{25}{34}{Impedance Dependance}{equation.4.25}{}}
+\newlabel{eq:tau_alpha}{{27}{34}{Impedance Dependance}{equation.4.27}{}}
+\newlabel{eq:krpres3}{{28}{34}{Impedance Dependance}{equation.4.28}{}}
+\newlabel{eq:tau_s}{{30}{35}{Impedance Dependance}{equation.4.30}{}}
+\newlabel{eq:tau_sum}{{32}{35}{Impedance Dependance}{equation.4.32}{}}
+\newlabel{eq:krpres4}{{33}{35}{Impedance Dependance}{equation.4.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Equilibrium krypton pressure as a function of impedance. This fitting model is derived from the assumption that $S_{trap}$ is independent of impedance. The data fits this model reasonably well.\relax }}{36}{figure.caption.18}}
+\newlabel{fig:impresponse}{{18}{36}{Equilibrium krypton pressure as a function of impedance. This fitting model is derived from the assumption that $S_{trap}$ is independent of impedance. The data fits this model reasonably well.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Post Flow Behavior}{36}{subsection.4.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Trials with and without a 500cc sample bottle connected to the output of the cold trap. These runs were both done at 3SLM, and at 19x impedance.\relax }}{37}{figure.caption.19}}
+\newlabel{fig:transientdrop}{{19}{37}{Trials with and without a 500cc sample bottle connected to the output of the cold trap. These runs were both done at 3SLM, and at 19x impedance.\relax }{figure.caption.19}{}}
+\newlabel{fig:cyrano1x}{{20a}{38}{1x impedance\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:cyrano1x}{{a}{38}{1x impedance\relax }{figure.caption.20}{}}
+\newlabel{fig:cyrano15x}{{20b}{38}{19x impedance\relax }{figure.caption.20}{}}
+\newlabel{sub@fig:cyrano15x}{{b}{38}{19x impedance\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Trials at 1x and 19x impedance, each at 0.3 SLM. Each trial has a period of time during post-flow in which V6 was closed; a 70 second period in the 1x case and a 210 second period in the 19x case. In both trials, the fractional drop in pressure while V6 was close was was roughly the same. The post-flow transient drop was calculated to be ($26\pm 10$)\% for the 1x impedance run and ($34\pm 8$)\% for the 19x impedance run. The ``tau loss'' indicated on the plots are extrapolated time constants assuming the pressure drop with V6 closed is due to some exponential decay.\relax }}{38}{figure.caption.20}}
+\newlabel{fig:cyrano_trace}{{20}{38}{Trials at 1x and 19x impedance, each at 0.3 SLM. Each trial has a period of time during post-flow in which V6 was closed; a 70 second period in the 1x case and a 210 second period in the 19x case. In both trials, the fractional drop in pressure while V6 was close was was roughly the same. The post-flow transient drop was calculated to be ($26\pm 10$)\% for the 1x impedance run and ($34\pm 8$)\% for the 19x impedance run. The ``tau loss'' indicated on the plots are extrapolated time constants assuming the pressure drop with V6 closed is due to some exponential decay.\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Lost krypton pressure as a function of the length of time with V6 closed. There does not seem to be a clear trend. \relax }}{39}{figure.caption.21}}
+\newlabel{fig:closed_drop}{{21}{39}{Lost krypton pressure as a function of the length of time with V6 closed. There does not seem to be a clear trend. \relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Diffusion and Entrainment}{40}{subsection.4.6}}
+\newlabel{eq:fick1}{{34}{40}{Diffusion and Entrainment}{equation.4.34}{}}
+\newlabel{eq:fick2}{{35}{40}{Diffusion and Entrainment}{equation.4.35}{}}
+\citation{laplace}
+\newlabel{eq:krpres_ent}{{51}{43}{Diffusion and Entrainment}{equation.4.51}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Model Overview}{43}{subsection.4.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis Scheme}{44}{section.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces The RGA-measured partial pressures of the 84 amu krypton peak and doubly ionized Xe-124 which appears as a peak at 62 amu. The four time intervals indicate: static baseline, rising Kr trace, steady-state Kr pressure, and post-flow Kr pressure fall.\relax }}{44}{figure.caption.22}}
+\newlabel{fig:RGAtrace}{{22}{44}{The RGA-measured partial pressures of the 84 amu krypton peak and doubly ionized Xe-124 which appears as a peak at 62 amu. The four time intervals indicate: static baseline, rising Kr trace, steady-state Kr pressure, and post-flow Kr pressure fall.\relax }{figure.caption.22}{}}
 \citation{sampling_doug,sampling_dm,sampling_EXO}
 \citation{sampling_dm}
 \citation{sampling_dm}
-\newlabel{eq:single_analysis}{{21}{29}{Analysis Scheme}{equation.5.21}{}}
-\newlabel{eq:average_analysis}{{22}{29}{Analysis Scheme}{equation.5.22}{}}
-\newlabel{eq:average_error}{{23}{29}{Analysis Scheme}{equation.5.23}{}}
-\newlabel{eq:gen_analysis}{{24}{29}{Analysis Scheme}{equation.5.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces The linearity of the averaging analysis method. The slope of this line will be equal to the calibration constant, $C$.\cite  {sampling_dm} \relax }}{30}{figure.caption.15}}
-\newlabel{fig:linplot_attila}{{15}{30}{The linearity of the averaging analysis method. The slope of this line will be equal to the calibration constant, $C$.\cite {sampling_dm} \relax }{figure.caption.15}{}}
-\newlabel{eq:shapefunc}{{25}{30}{Analysis Scheme}{equation.5.25}{}}
-\newlabel{eq:int_analysis}{{28}{31}{Analysis Scheme}{equation.5.28}{}}
-\newlabel{fig:RGAtrace2}{{16a}{32}{Sample RGA trace.\relax }{figure.caption.16}{}}
-\newlabel{sub@fig:RGAtrace2}{{a}{32}{Sample RGA trace.\relax }{figure.caption.16}{}}
-\newlabel{fig:intlin}{{16b}{32}{Linearity of analysis.\relax }{figure.caption.16}{}}
-\newlabel{sub@fig:intlin}{{b}{32}{Linearity of analysis.\relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Linearity of the integration-style analysis described in equation \ref  {eq:int_analysis}. The krypton signals used in these measurements never reached an equilibrium value. The xenon flow profile for theses measurements was a square pulse. The height of this pulse was set using an MFC, and the time-width of the pulse was defined by the size of the xenon sample used. $t_1$ was defined as the start of the xenon flow, plus 20 seconds, and $t_2$ was defined as the stop of the xenon flow, plus 20 seconds.\relax }}{32}{figure.caption.16}}
-\newlabel{fig:linplot}{{16}{32}{Linearity of the integration-style analysis described in equation \ref {eq:int_analysis}. The krypton signals used in these measurements never reached an equilibrium value. The xenon flow profile for theses measurements was a square pulse. The height of this pulse was set using an MFC, and the time-width of the pulse was defined by the size of the xenon sample used. $t_1$ was defined as the start of the xenon flow, plus 20 seconds, and $t_2$ was defined as the stop of the xenon flow, plus 20 seconds.\relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}System Parameters and Optimization}{32}{section.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces The trend in RGA fluctuations as a function of partial pressure. The noise ratio is defined as the fraction by which the RGA fluctuations increase when the partial pressure is increased from its baseline value ($\textrm  {Noise ratio} \equiv \sigma (PP)/\sigma (baseline)$). \relax }}{33}{figure.caption.17}}
-\newlabel{fig:RGAnoise}{{17}{33}{The trend in RGA fluctuations as a function of partial pressure. The noise ratio is defined as the fraction by which the RGA fluctuations increase when the partial pressure is increased from its baseline value ($\textrm {Noise ratio} \equiv \sigma (PP)/\sigma (baseline)$). \relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}RGA Parameters}{33}{subsection.6.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces RGA sensitivity as a function of CDEM voltage. \relax }}{35}{figure.caption.18}}
-\newlabel{fig:CTpid}{{18}{35}{RGA sensitivity as a function of CDEM voltage. \relax }{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Calibrations}{36}{section.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Preparation of Calibration Xenon}{36}{subsection.7.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Plumbing diagram of a generalized mixing system. \relax }}{37}{figure.caption.19}}
-\newlabel{fig:mixpid}{{19}{37}{Plumbing diagram of a generalized mixing system. \relax }{figure.caption.19}{}}
+\newlabel{eq:basic_analysis}{{52}{46}{Analysis Scheme}{equation.5.52}{}}
+\newlabel{eq:single_analysis}{{53}{46}{Analysis Scheme}{equation.5.53}{}}
+\newlabel{eq:average_analysis}{{54}{46}{Analysis Scheme}{equation.5.54}{}}
+\newlabel{eq:average_error}{{55}{46}{Analysis Scheme}{equation.5.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces The linearity of the averaging analysis method. The slope of this line will be equal to the calibration constant, $C$.\cite  {sampling_dm} \relax }}{47}{figure.caption.23}}
+\newlabel{fig:linplot_attila}{{23}{47}{The linearity of the averaging analysis method. The slope of this line will be equal to the calibration constant, $C$.\cite {sampling_dm} \relax }{figure.caption.23}{}}
+\newlabel{eq:gen_analysis}{{56}{47}{Analysis Scheme}{equation.5.56}{}}
+\newlabel{eq:shapefunc}{{57}{48}{Analysis Scheme}{equation.5.57}{}}
+\newlabel{eq:int_analysis}{{60}{48}{Analysis Scheme}{equation.5.60}{}}
+\newlabel{fig:RGAtrace2}{{24a}{49}{Sample RGA trace.\relax }{figure.caption.24}{}}
+\newlabel{sub@fig:RGAtrace2}{{a}{49}{Sample RGA trace.\relax }{figure.caption.24}{}}
+\newlabel{fig:intlin}{{24b}{49}{Linearity of analysis.\relax }{figure.caption.24}{}}
+\newlabel{sub@fig:intlin}{{b}{49}{Linearity of analysis.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Linearity of the integration-style analysis described in equation \ref  {eq:int_analysis}. The krypton signals used in these measurements never reached an equilibrium value. The xenon flow profile for theses measurements was a square pulse. The height of this pulse was set using an MFC, and the time-width of the pulse was defined by the size of the xenon sample used. $t_1$ was defined as the start of the xenon flow, plus 20 seconds, and $t_2$ was defined as the stop of the xenon flow, plus 20 seconds.\relax }}{49}{figure.caption.24}}
+\newlabel{fig:linplot}{{24}{49}{Linearity of the integration-style analysis described in equation \ref {eq:int_analysis}. The krypton signals used in these measurements never reached an equilibrium value. The xenon flow profile for theses measurements was a square pulse. The height of this pulse was set using an MFC, and the time-width of the pulse was defined by the size of the xenon sample used. $t_1$ was defined as the start of the xenon flow, plus 20 seconds, and $t_2$ was defined as the stop of the xenon flow, plus 20 seconds.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces The trend in RGA fluctuations as a function of partial pressure. The noise ratio is defined as the fraction by which the RGA fluctuations increase when the partial pressure is increased from its baseline value ($\textrm  {Noise ratio} \equiv \sigma (PP)/\sigma (baseline)$). \relax }}{50}{figure.caption.25}}
+\newlabel{fig:RGAnoise}{{25}{50}{The trend in RGA fluctuations as a function of partial pressure. The noise ratio is defined as the fraction by which the RGA fluctuations increase when the partial pressure is increased from its baseline value ($\textrm {Noise ratio} \equiv \sigma (PP)/\sigma (baseline)$). \relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}System Parameters and Optimization}{50}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}RGA Parameters}{51}{subsection.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces RGA sensitivity as a function of CDEM voltage. \relax }}{52}{figure.caption.26}}
+\newlabel{fig:CTpid}{{26}{52}{RGA sensitivity as a function of CDEM voltage. \relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Preparation of Calibration Xenon}{53}{subsection.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Plumbing diagram of a generalized mixing system. \relax }}{54}{figure.caption.27}}
+\newlabel{fig:mixpid}{{27}{54}{Plumbing diagram of a generalized mixing system. \relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Optimized Settings}{55}{subsection.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Peak krypton RGA pressure as a function of flow rate. \relax }}{57}{figure.caption.28}}
+\newlabel{fig:flowresponse1x}{{28}{57}{Peak krypton RGA pressure as a function of flow rate. \relax }{figure.caption.28}{}}
 \bibdata{main}
 \bibcite{vac_eq}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Calibration Procedure}{38}{subsection.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Optimized Settings}{38}{subsection.7.3}}
 \bibcite{vaporpressure}{2}
 \bibcite{sampling_doug}{3}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Peak krypton RGA pressure as a function of flow rate. \relax }}{39}{figure.caption.20}}
-\newlabel{fig:flowresponse1x}{{20}{39}{Peak krypton RGA pressure as a function of flow rate. \relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Sensitivity Demonstration}{39}{section.8}}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Sample Procedures}{39}{appendix.A}}
-\newlabel{ap:procedures}{{A}{39}{Sample Procedures}{appendix.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Troubleshooting}{39}{appendix.B}}
 \bibcite{sampling_dm}{4}
 \bibcite{LNheatflux}{5}
-\bibcite{sampling_EXO}{6}
+\bibcite{laplace}{6}
+\bibcite{sampling_EXO}{7}
 \bibstyle{Science}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Sensitivity Demonstration}{59}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Direction for Further Study}{59}{section.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Sample Procedures}{59}{appendix.A}}
+\newlabel{ap:procedures}{{A}{59}{Sample Procedures}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Troubleshooting}{59}{appendix.B}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Amplification of krypton signal by increasing the impedance settings to the 50x state. Identical flow rates and xenon samples were used with the only difference being the impedance settings. $\Phi $ is the measured krypton concentration in the 1x impedance setting and corresponding calibration. $\Phi _{eff}$ is the equivalent measurement in the 50x state, using the 1x calibration number. \relax }}{60}{figure.caption.29}}
+\newlabel{fig:ampimp}{{29}{60}{Amplification of krypton signal by increasing the impedance settings to the 50x state. Identical flow rates and xenon samples were used with the only difference being the impedance settings. $\Phi $ is the measured krypton concentration in the 1x impedance setting and corresponding calibration. $\Phi _{eff}$ is the equivalent measurement in the 50x state, using the 1x calibration number. \relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Scan across impedance and flow rate setting in search of the optimal settings.\relax }}{61}{figure.caption.30}}
+\newlabel{fig:sensscan}{{30}{61}{Scan across impedance and flow rate setting in search of the optimal settings.\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Krypton pressure vs time traces near the limit of sensitivity.\relax }}{62}{figure.caption.31}}
+\newlabel{fig:senstrace}{{31}{62}{Krypton pressure vs time traces near the limit of sensitivity.\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Histogram of measurements of xenon which has $<1$ ppQ of krypton.\relax }}{63}{figure.caption.32}}
+\newlabel{fig:senstrace}{{32}{63}{Histogram of measurements of xenon which has $<1$ ppQ of krypton.\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces \relax }}{64}{figure.caption.33}}
+\newlabel{fig:linplot}{{33}{64}{\relax }{figure.caption.33}{}}
