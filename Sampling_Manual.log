@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 JUL 2017 01:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JUL 2017 01:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -312,9 +312,6 @@ LaTeX Warning: Label `fig:flowresponse1x' multiply defined.
 
 LaTeX Warning: Label `fig:senstrace' multiply defined.
 
-
-LaTeX Warning: Label `fig:linplot' multiply defined.
-
 )
 \openout1 = `Sampling_Manual.aux'.
 
@@ -391,7 +388,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 
-<Figures/Cold_Trap_cartoon.png, id=104, 1353.055pt x 790.955pt>
+<Figures/Cold_Trap_cartoon.png, id=116, 1353.055pt x 790.955pt>
 File: Figures/Cold_Trap_cartoon.png Graphic file (type png)
 
 <use Figures/Cold_Trap_cartoon.png>
@@ -406,7 +403,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/ColdTrap_diagram.png, id=117, 585.18625pt x 359.3425pt>
+<Figures/ColdTrap_diagram.png, id=129, 585.18625pt x 359.3425pt>
 File: Figures/ColdTrap_diagram.png Graphic file (type png)
 
 <use Figures/ColdTrap_diagram.png>
@@ -441,21 +438,21 @@ LaTeX Warning: Reference `sec:impedance' on page 8 undefined on input line 174.
 LaTeX Warning: Reference `sec:impedance' on page 9 undefined on input line 192.
 
 
-[9] [10] <Figures/impedance_adjust.png, id=199, 501.875pt x 401.5pt>
+[9] [10] <Figures/impedance_adjust.png, id=211, 501.875pt x 401.5pt>
 File: Figures/impedance_adjust.png Graphic file (type png)
 
 <use Figures/impedance_adjust.png>
 Package pdftex.def Info: Figures/impedance_adjust.png used on input line 206.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
  [11 <./Figures/impedance_adjust.png (PNG copy)>] [12] [13] <Figures/RGATrace_f
-it_fast.png, id=229, 501.875pt x 401.5pt>
+it_fast.png, id=241, 501.875pt x 401.5pt>
 File: Figures/RGATrace_fit_fast.png Graphic file (type png)
 
 <use Figures/RGATrace_fit_fast.png>
 Package pdftex.def Info: Figures/RGATrace_fit_fast.png used on input line 303.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
  [14] [15 <./Figures/RGATrace_fit_fast.png (PNG copy)>] [16]
-<Figures/cold_trap_geometries.png, id=255, 688.5725pt x 388.45125pt>
+<Figures/cold_trap_geometries.png, id=267, 688.5725pt x 388.45125pt>
 File: Figures/cold_trap_geometries.png Graphic file (type png)
 
 <use Figures/cold_trap_geometries.png>
@@ -466,171 +463,182 @@ Package pdftex.def Info: Figures/cold_trap_geometries.png used on input line 32
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18 <./Figures/cold_trap_geometries.png>]
-<Figures/ice_plug_start.png, id=270, 943.525pt x 852.18375pt>
+
+Package caption Warning: \label without proper \caption on input line 334.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:geo' on page 17 undefined on input line 332.
+
+[17]
+
+Package caption Warning: \label without proper \caption on input line 334.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:geo' on page 18 undefined on input line 346.
+
+[18 <./Figures/cold_trap_geometries.png>]
+<Figures/ice_plug_start.png, id=283, 943.525pt x 852.18375pt>
 File: Figures/ice_plug_start.png Graphic file (type png)
 
 <use Figures/ice_plug_start.png>
-Package pdftex.def Info: Figures/ice_plug_start.png used on input line 358.
+Package pdftex.def Info: Figures/ice_plug_start.png used on input line 360.
 (pdftex.def)             Requested size: 204.85844pt x 185.02338pt.
 
-<Figures/ice_plug_full.png, id=271, 2802.47pt x 2811.50375pt>
+<Figures/ice_plug_full.png, id=284, 2802.47pt x 2811.50375pt>
 File: Figures/ice_plug_full.png Graphic file (type png)
 
 <use Figures/ice_plug_full.png>
-Package pdftex.def Info: Figures/ice_plug_full.png used on input line 364.
+Package pdftex.def Info: Figures/ice_plug_full.png used on input line 366.
 (pdftex.def)             Requested size: 204.85844pt x 205.49118pt.
  [19]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/xenon_breakthrough.png, id=277, 501.875pt x 401.5pt>
+<Figures/xenon_breakthrough.png, id=290, 501.875pt x 401.5pt>
 File: Figures/xenon_breakthrough.png Graphic file (type png)
 
 <use Figures/xenon_breakthrough.png>
-Package pdftex.def Info: Figures/xenon_breakthrough.png used on input line 375.
+Package pdftex.def Info: Figures/xenon_breakthrough.png used on input line 377.
 
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
  [20]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/RGA_noise_correlation.png, id=283, 578.16pt x 433.62pt>
+<Figures/RGA_noise_correlation.png, id=296, 578.16pt x 433.62pt>
 File: Figures/RGA_noise_correlation.png Graphic file (type png)
 
 <use Figures/RGA_noise_correlation.png>
 Package pdftex.def Info: Figures/RGA_noise_correlation.png used on input line 3
-85.
+87.
 (pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
  [21 <./Figures/ice_plug_start.png> <./Figures/ice_plug_full.png>] [22 <./Figur
 es/xenon_breakthrough.png (PNG copy)>]
-[23 <./Figures/RGA_noise_correlation.png (PNG copy)>]
-<Figures/ice_form_Krloss.png, id=302, 501.875pt x 401.5pt>
+[23 <./Figures/RGA_noise_correlation.png (PNG copy)>] [24]
+<Figures/ice_form_Krloss.png, id=319, 501.875pt x 401.5pt>
 File: Figures/ice_form_Krloss.png Graphic file (type png)
 
 <use Figures/ice_form_Krloss.png>
-Package pdftex.def Info: Figures/ice_form_Krloss.png used on input line 399.
+Package pdftex.def Info: Figures/ice_form_Krloss.png used on input line 403.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24] [25 <./Figures/ice_form_Krloss.png (PNG copy)>]
-<Figures/SLAC_flow_turnover.png, id=315, 501.875pt x 401.5pt>
+ [25 <./Figures/ice_form_Krloss.png (PNG copy)>] <Figures/SLAC_flow_turnover.pn
+g, id=328, 501.875pt x 401.5pt>
 File: Figures/SLAC_flow_turnover.png Graphic file (type png)
 
 <use Figures/SLAC_flow_turnover.png>
-Package pdftex.def Info: Figures/SLAC_flow_turnover.png used on input line 413.
+Package pdftex.def Info: Figures/SLAC_flow_turnover.png used on input line 417.
 
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_flow_turnover_1p5in.png, id=316, 501.875pt x 401.5pt>
+<Figures/SLAC_flow_turnover_1p5in.png, id=329, 501.875pt x 401.5pt>
 File: Figures/SLAC_flow_turnover_1p5in.png Graphic file (type png)
 
 <use Figures/SLAC_flow_turnover_1p5in.png>
 Package pdftex.def Info: Figures/SLAC_flow_turnover_1p5in.png used on input lin
-e 419.
+e 423.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_FlowResponse_15x.png, id=319, 501.875pt x 401.5pt>
+<Figures/SLAC_FlowResponse_15x.png, id=332, 501.875pt x 401.5pt>
 File: Figures/SLAC_FlowResponse_15x.png Graphic file (type png)
 
 <use Figures/SLAC_FlowResponse_15x.png>
 Package pdftex.def Info: Figures/SLAC_FlowResponse_15x.png used on input line 4
-32.
+36.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_FlowResponse_15x_1p5in.png, id=320, 501.875pt x 401.5pt>
+<Figures/SLAC_FlowResponse_15x_1p5in.png, id=333, 501.875pt x 401.5pt>
 File: Figures/SLAC_FlowResponse_15x_1p5in.png Graphic file (type png)
 
 <use Figures/SLAC_FlowResponse_15x_1p5in.png>
 Package pdftex.def Info: Figures/SLAC_FlowResponse_15x_1p5in.png used on input 
-line 438.
+line 442.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/FlowResponse.png, id=321, 562.1pt x 421.575pt>
+<Figures/FlowResponse.png, id=334, 562.1pt x 421.575pt>
 File: Figures/FlowResponse.png Graphic file (type png)
 
 <use Figures/FlowResponse.png>
-Package pdftex.def Info: Figures/FlowResponse.png used on input line 446.
+Package pdftex.def Info: Figures/FlowResponse.png used on input line 450.
 (pdftex.def)             Requested size: 455.24408pt x 341.43527pt.
  [26 <./Figures/SLAC_flow_turnover.png (PNG copy)> <./Figures/SLAC_flow_turnove
 r_1p5in.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/turn_over.png, id=328, 501.875pt x 401.5pt>
+<Figures/turn_over.png, id=341, 501.875pt x 401.5pt>
 File: Figures/turn_over.png Graphic file (type png)
 
 <use Figures/turn_over.png>
-Package pdftex.def Info: Figures/turn_over.png used on input line 453.
+Package pdftex.def Info: Figures/turn_over.png used on input line 457.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
-
+ [27 <./Figures/SLAC_FlowResponse_15x.png (PNG copy)> <./Figures/SLAC_FlowRespo
+nse_15x_1p5in.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SLAC_FlowResponse_1x_linfit.png, id=332, 501.875pt x 401.5pt>
+<Figures/SLAC_FlowResponse_1x_linfit.png, id=350, 501.875pt x 401.5pt>
 File: Figures/SLAC_FlowResponse_1x_linfit.png Graphic file (type png)
 
 <use Figures/SLAC_FlowResponse_1x_linfit.png>
 Package pdftex.def Info: Figures/SLAC_FlowResponse_1x_linfit.png used on input 
-line 463.
+line 467.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_FlowResponse_15x_linplot.png, id=333, 501.875pt x 401.5pt>
+<Figures/SLAC_FlowResponse_15x_linplot.png, id=351, 501.875pt x 401.5pt>
 File: Figures/SLAC_FlowResponse_15x_linplot.png Graphic file (type png)
 
 <use Figures/SLAC_FlowResponse_15x_linplot.png>
 Package pdftex.def Info: Figures/SLAC_FlowResponse_15x_linplot.png used on inpu
-t line 469.
+t line 473.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
- [27 <./Figures/SLAC_FlowResponse_15x.png (PNG copy)> <./Figures/SLAC_FlowRespo
-nse_15x_1p5in.png (PNG copy)>]
+ [28 <./Figures/FlowResponse.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <./Figures/FlowResponse.png (PNG copy)>]
+[29 <./Figures/turn_over.png (PNG copy)>]
 
-LaTeX Warning: Reference `fig:CTresponse' on page 29 undefined on input line 48
-3.
+LaTeX Warning: Reference `fig:CTresponse' on page 30 undefined on input line 48
+7.
 
-<Figures/RGAtrace_fit_slow_wexp.png, id=349, 501.875pt x 401.5pt>
+<Figures/RGAtrace_fit_slow_wexp.png, id=367, 501.875pt x 401.5pt>
 File: Figures/RGAtrace_fit_slow_wexp.png Graphic file (type png)
 
 <use Figures/RGAtrace_fit_slow_wexp.png>
 Package pdftex.def Info: Figures/RGAtrace_fit_slow_wexp.png used on input line 
-486.
+490.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [29 <./Figures/turn_over.png (PNG copy)>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/SLAC_imp_response_linfit.png, id=355, 501.875pt x 401.5pt>
+<Figures/SLAC_imp_response_linfit.png, id=368, 501.875pt x 401.5pt>
 File: Figures/SLAC_imp_response_linfit.png Graphic file (type png)
 
 <use Figures/SLAC_imp_response_linfit.png>
 Package pdftex.def Info: Figures/SLAC_imp_response_linfit.png used on input lin
-e 496.
+e 500.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_imp_response_1p5in_linfit.png, id=356, 501.875pt x 401.5pt>
+<Figures/SLAC_imp_response_1p5in_linfit.png, id=369, 501.875pt x 401.5pt>
 File: Figures/SLAC_imp_response_1p5in_linfit.png Graphic file (type png)
 
 <use Figures/SLAC_imp_response_1p5in_linfit.png>
 Package pdftex.def Info: Figures/SLAC_imp_response_1p5in_linfit.png used on inp
-ut line 501.
+ut line 505.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
-
+ [30 <./Figures/SLAC_FlowResponse_1x_linfit.png (PNG copy)> <./Figures/SLAC_Flo
+wResponse_15x_linplot.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./Figures/SLAC_FlowResponse_1x_linfit.png (PNG copy)> <./Figures/SLAC_Flow
-Response_15x_linplot.png (PNG copy)>] [31 <./Figures/RGAtrace_fit_slow_wexp.png
- (PNG copy)>] <Figures/SLAC_alpha.png, id=370, 501.875pt x 401.5pt>
+[31 <./Figures/RGAtrace_fit_slow_wexp.png (PNG copy)>]
+<Figures/SLAC_alpha.png, id=383, 501.875pt x 401.5pt>
 File: Figures/SLAC_alpha.png Graphic file (type png)
 
 <use Figures/SLAC_alpha.png>
-Package pdftex.def Info: Figures/SLAC_alpha.png used on input line 513.
+Package pdftex.def Info: Figures/SLAC_alpha.png used on input line 517.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
@@ -638,223 +646,251 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32 <./Figures/SLAC_imp_response_linfit.png (PNG copy)> <./Figures/SLAC_imp_res
 ponse_1p5in_linfit.png (PNG copy)>] [33 <./Figures/SLAC_alpha.png (PNG copy)>]
-[34] <Figures/SLAC_imp_response.png, id=409, 501.875pt x 401.5pt>
+[34] <Figures/SLAC_imp_response.png, id=421, 501.875pt x 401.5pt>
 File: Figures/SLAC_imp_response.png Graphic file (type png)
 
 <use Figures/SLAC_imp_response.png>
-Package pdftex.def Info: Figures/SLAC_imp_response.png used on input line 587.
+Package pdftex.def Info: Figures/SLAC_imp_response.png used on input line 591.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/SLAC_imp_response_1p5in.png, id=410, 501.875pt x 401.5pt>
+<Figures/SLAC_imp_response_1p5in.png, id=422, 501.875pt x 401.5pt>
 File: Figures/SLAC_imp_response_1p5in.png Graphic file (type png)
 
 <use Figures/SLAC_imp_response_1p5in.png>
 Package pdftex.def Info: Figures/SLAC_imp_response_1p5in.png used on input line
- 592.
+ 596.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+ [35]
+<Figures/post_flow_transient_nobottle.png, id=434, 501.875pt x 401.5pt>
+File: Figures/post_flow_transient_nobottle.png Graphic file (type png)
+
+<use Figures/post_flow_transient_nobottle.png>
+Package pdftex.def Info: Figures/post_flow_transient_nobottle.png used on input
+ line 611.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+
+<Figures/post_flow_transient_wbottle.png, id=435, 501.875pt x 401.5pt>
+File: Figures/post_flow_transient_wbottle.png Graphic file (type png)
+
+<use Figures/post_flow_transient_wbottle.png>
+Package pdftex.def Info: Figures/post_flow_transient_wbottle.png used on input 
+line 616.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+ [36 <./Figures/SLAC_imp_response.png (PNG copy)> <./Figures/SLAC_imp_response_
+1p5in.png (PNG copy)>] [37 <./Figures/post_flow_transient_nobottle.png (PNG cop
+y)> <./Figures/post_flow_transient_wbottle.png (PNG copy)>]
+<Figures/cyrano_pvt_1x.png, id=449, 501.875pt x 401.5pt>
+File: Figures/cyrano_pvt_1x.png Graphic file (type png)
+
+<use Figures/cyrano_pvt_1x.png>
+Package pdftex.def Info: Figures/cyrano_pvt_1x.png used on input line 630.
+(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
+
+<Figures/cyrano_pvt_15x.png, id=450, 501.875pt x 401.5pt>
+File: Figures/cyrano_pvt_15x.png Graphic file (type png)
+
+<use Figures/cyrano_pvt_15x.png>
+Package pdftex.def Info: Figures/cyrano_pvt_15x.png used on input line 636.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35] <Figures/post_flow_transient_nobottle.png, id=421, 501.875pt x 401.5pt>
-File: Figures/post_flow_transient_nobottle.png Graphic file (type png)
-
-<use Figures/post_flow_transient_nobottle.png>
-Package pdftex.def Info: Figures/post_flow_transient_nobottle.png used on input
- line 607.
-(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
-
-<Figures/post_flow_transient_wbottle.png, id=422, 501.875pt x 401.5pt>
-File: Figures/post_flow_transient_wbottle.png Graphic file (type png)
-
-<use Figures/post_flow_transient_wbottle.png>
-Package pdftex.def Info: Figures/post_flow_transient_wbottle.png used on input 
-line 612.
-(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
- [36 <./Figures/SLAC_imp_response.png (PNG copy)> <./Figures/SLAC_imp_response_
-1p5in.png (PNG copy)>] [37 <./Figures/post_flow_transient_nobottle.png (PNG cop
-y)> <./Figures/post_flow_transient_wbottle.png (PNG copy)>]
-<Figures/cyrano_pvt_1x.png, id=436, 501.875pt x 401.5pt>
-File: Figures/cyrano_pvt_1x.png Graphic file (type png)
-
-<use Figures/cyrano_pvt_1x.png>
-Package pdftex.def Info: Figures/cyrano_pvt_1x.png used on input line 626.
-(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
-
-<Figures/cyrano_pvt_15x.png, id=437, 501.875pt x 401.5pt>
-File: Figures/cyrano_pvt_15x.png Graphic file (type png)
-
-<use Figures/cyrano_pvt_15x.png>
-Package pdftex.def Info: Figures/cyrano_pvt_15x.png used on input line 632.
-(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
-
-<Figures/diffusion_pdrop.png, id=438, 501.875pt x 401.5pt>
+<Figures/diffusion_pdrop.png, id=451, 501.875pt x 401.5pt>
 File: Figures/diffusion_pdrop.png Graphic file (type png)
 
 <use Figures/diffusion_pdrop.png>
-Package pdftex.def Info: Figures/diffusion_pdrop.png used on input line 643.
+Package pdftex.def Info: Figures/diffusion_pdrop.png used on input line 647.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [38 <./Figures/cyrano_pvt_1x.png (PNG copy)> <./Figures/cyrano_pvt_15x.png (PN
-G copy)>] [39 <./Figures/diffusion_pdrop.png (PNG copy)>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38] [39 <./Figures/cyrano_pvt_1x.png (PNG copy)> <./Figures/cyrano_pvt_15x.png
+ (PNG copy)>] [40 <./Figures/diffusion_pdrop.png (PNG copy)>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 661.
+(amsmath)                 on input line 665.
 
-[40] [41] [42] [43] <Figures/RGA_trace.png, id=500, 501.875pt x 401.5pt>
+[41] [42] [43] [44] <Figures/RGA_trace.png, id=517, 501.875pt x 401.5pt>
 File: Figures/RGA_trace.png Graphic file (type png)
 
 <use Figures/RGA_trace.png>
-Package pdftex.def Info: Figures/RGA_trace.png used on input line 746.
+Package pdftex.def Info: Figures/RGA_trace.png used on input line 754.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [44 <./Figures/RGA_trace.png (PNG copy)>] [45]
-<Figures/Lin_avg_Attila.png, id=515, 736.7525pt x 507.8975pt>
+ [45 <./Figures/RGA_trace.png (PNG copy)>] [46]
+<Figures/Lin_avg_Attila.png, id=532, 736.7525pt x 507.8975pt>
 File: Figures/Lin_avg_Attila.png Graphic file (type png)
 
 <use Figures/Lin_avg_Attila.png>
-Package pdftex.def Info: Figures/Lin_avg_Attila.png used on input line 783.
+Package pdftex.def Info: Figures/Lin_avg_Attila.png used on input line 791.
 (pdftex.def)             Requested size: 455.24408pt x 313.83147pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46] [47 <./Figures/Lin_avg_Attila.png>]
+[47] [48 <./Figures/Lin_avg_Attila.png>]
 
-LaTeX Warning: Reference `sec:calibrations' on page 48 undefined on input line 
-821.
+LaTeX Warning: Reference `sec:calibrations' on page 49 undefined on input line 
+829.
 
-<Figures/RGATrace_int.png, id=540, 501.875pt x 401.5pt>
+<Figures/RGATrace_int.png, id=557, 501.875pt x 401.5pt>
 File: Figures/RGATrace_int.png Graphic file (type png)
 
 <use Figures/RGATrace_int.png>
-Package pdftex.def Info: Figures/RGATrace_int.png used on input line 827.
+Package pdftex.def Info: Figures/RGATrace_int.png used on input line 835.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
-<Figures/LinPlot0217.png, id=541, 501.875pt x 401.5pt>
+<Figures/LinPlot0217.png, id=558, 501.875pt x 401.5pt>
 File: Figures/LinPlot0217.png Graphic file (type png)
 
 <use Figures/LinPlot0217.png>
-Package pdftex.def Info: Figures/LinPlot0217.png used on input line 833.
+Package pdftex.def Info: Figures/LinPlot0217.png used on input line 841.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48] <Figures/RGA_Noise_v_PP.png, id=557, 501.875pt x 401.5pt>
+[49] <Figures/RGA_Noise_v_PP.png, id=575, 501.875pt x 401.5pt>
 File: Figures/RGA_Noise_v_PP.png Graphic file (type png)
 
 <use Figures/RGA_Noise_v_PP.png>
-Package pdftex.def Info: Figures/RGA_Noise_v_PP.png used on input line 852.
+Package pdftex.def Info: Figures/RGA_Noise_v_PP.png used on input line 861.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[49 <./Figures/RGATrace_int.png (PNG copy)> <./Figures/LinPlot0217.png (PNG cop
-y)>] [50 <./Figures/RGA_Noise_v_PP.png (PNG copy)>]
-<Figures/CDEM_gain_noise.png, id=571, 501.875pt x 401.5pt>
+[50 <./Figures/RGATrace_int.png (PNG copy)> <./Figures/LinPlot0217.png (PNG cop
+y)>] [51 <./Figures/RGA_Noise_v_PP.png (PNG copy)>]
+<Figures/CDEM_gain_noise.png, id=588, 501.875pt x 401.5pt>
 File: Figures/CDEM_gain_noise.png Graphic file (type png)
 
 <use Figures/CDEM_gain_noise.png>
-Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 871.
+Package pdftex.def Info: Figures/CDEM_gain_noise.png used on input line 880.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [51] [52 <./Figures/CDEM_gain_noise.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:SLACpid' on page 53 undefined on input line 881.
-
-<Figures/Mixing_diagram.png, id=580, 397.485pt x 210.7875pt>
-File: Figures/Mixing_diagram.png Graphic file (type png)
-
-<use Figures/Mixing_diagram.png>
-Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 883.
-(pdftex.def)             Requested size: 455.24408pt x 241.42596pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[53] [54 <./Figures/Mixing_diagram.png>] [55]
-<Figures/RGAtrace_ideal.png, id=603, 501.875pt x 401.5pt>
+ [52] [53 <./Figures/CDEM_gain_noise.png (PNG copy)>] <Figures/RGAtrace_ideal.p
+ng, id=599, 501.875pt x 401.5pt>
 File: Figures/RGAtrace_ideal.png Graphic file (type png)
 
 <use Figures/RGAtrace_ideal.png>
-Package pdftex.def Info: Figures/RGAtrace_ideal.png used on input line 917.
+Package pdftex.def Info: Figures/RGAtrace_ideal.png used on input line 899.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Adjusted_impedance_study.png, id=607, 578.16pt x 433.62pt>
+[54] <Figures/Adjusted_impedance_study.png, id=609, 578.16pt x 433.62pt>
 File: Figures/Adjusted_impedance_study.png Graphic file (type png)
 
 <use Figures/Adjusted_impedance_study.png>
 Package pdftex.def Info: Figures/Adjusted_impedance_study.png used on input lin
-e 926.
+e 908.
 (pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/SLAC_flowimpedance_response_plot.png, id=608, 501.875pt x 401.5pt>
+ [55 <./Figures/RGAtrace_ideal.png (PNG copy)>]
+<Figures/SLAC_flowimpedance_response_plot.png, id=617, 501.875pt x 401.5pt>
 File: Figures/SLAC_flowimpedance_response_plot.png Graphic file (type png)
 
 <use Figures/SLAC_flowimpedance_response_plot.png>
 Package pdftex.def Info: Figures/SLAC_flowimpedance_response_plot.png used on i
-nput line 933.
+nput line 915.
 (pdftex.def)             Requested size: 455.24408pt x 364.2138pt.
- [56]
+ [56 <./Figures/Adjusted_impedance_study.png (PNG copy)>] [57 <./Figures/SLAC_f
+lowimpedance_response_plot.png (PNG copy)>] [58]
+<Figures/Mixing_diagram.png, id=634, 397.485pt x 210.7875pt>
+File: Figures/Mixing_diagram.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[57 <./Figures/RGAtrace_ideal.png (PNG copy)>]
-<Figures/SLAC_PvT_ppq_sensitivity.png, id=620, 578.16pt x 433.62pt>
-File: Figures/SLAC_PvT_ppq_sensitivity.png Graphic file (type png)
-
-<use Figures/SLAC_PvT_ppq_sensitivity.png>
-Package pdftex.def Info: Figures/SLAC_PvT_ppq_sensitivity.png used on input lin
-e 958.
-(pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/BlankHist0217.png, id=621, 562.1pt x 421.575pt>
+<use Figures/Mixing_diagram.png>
+Package pdftex.def Info: Figures/Mixing_diagram.png used on input line 942.
+(pdftex.def)             Requested size: 455.24408pt x 241.42596pt.
+ [59 <./Figures/Mixing_diagram.png>] [60]
+[61] [62] <Figures/BlankHist0217.png, id=667, 562.1pt x 421.575pt>
 File: Figures/BlankHist0217.png Graphic file (type png)
 
 <use Figures/BlankHist0217.png>
-Package pdftex.def Info: Figures/BlankHist0217.png used on input line 964.
+Package pdftex.def Info: Figures/BlankHist0217.png used on input line 991.
 (pdftex.def)             Requested size: 455.24408pt x 341.43527pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/SensPlot0217.png, id=622, 562.1pt x 421.575pt>
-File: Figures/SensPlot0217.png Graphic file (type png)
-
-<use Figures/SensPlot0217.png>
-Package pdftex.def Info: Figures/SensPlot0217.png used on input line 973.
-(pdftex.def)             Requested size: 227.62204pt x 170.71764pt.
-File: Figures/LinPlot0217.png Graphic file (type png)
- <use Figures/LinPlot0217.png>
-Package pdftex.def Info: Figures/LinPlot0217.png used on input line 979.
-(pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58] (./Sampling_Manual.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1008.
- [59] [60 <./Figures/Adjusted_impedance_study.png (PNG copy)>] [61 <./Figures/S
-LAC_flowimpedance_response_plot.png (PNG copy)>]
-[62 <./Figures/SLAC_PvT_ppq_sensitivity.png (PNG copy)>] [63 <./Figures/BlankHi
-st0217.png (PNG copy)>] [64 <./Figures/SensPlot0217.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1008.
+<Figures/SLAC_ColdTrap_diagram_wvols.pdf, id=669, 418.56375pt x 388.45125pt>
+File: Figures/SLAC_ColdTrap_diagram_wvols.pdf Graphic file (type pdf)
 
-(./Sampling_Manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1008.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1008.
+<use Figures/SLAC_ColdTrap_diagram_wvols.pdf>
+Package pdftex.def Info: Figures/SLAC_ColdTrap_diagram_wvols.pdf used on input 
+line 1000.
+(pdftex.def)             Requested size: 455.24408pt x 422.49065pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper \caption on input line 1004.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:SLACvols' on page 63 undefined on input line 1005
+.
+
+[63]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[64 <./Figures/BlankHist0217.png (PNG copy)>]
+
+Package caption Warning: \label without proper \caption on input line 1027.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:concentrations' on page 65 undefined on input lin
+e 1055.
+
+[65 <./Figures/SLAC_ColdTrap_diagram_wvols.pdf>] [66]
+
+Package caption Warning: \label without proper \caption on input line 1027.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:concentrations' on page 67 undefined on input lin
+e 1062.
+
+<Figures/SensPlot0217.pdf, id=718, 614.295pt x 794.97pt>
+File: Figures/SensPlot0217.pdf Graphic file (type pdf)
+
+<use Figures/SensPlot0217.pdf>
+Package pdftex.def Info: Figures/SensPlot0217.pdf used on input line 1067.
+(pdftex.def)             Requested size: 227.62204pt x 294.57098pt.
+
+<Figures/LinPlot0217.pdf, id=719, 614.295pt x 794.97pt>
+File: Figures/LinPlot0217.pdf Graphic file (type pdf)
+
+<use Figures/LinPlot0217.pdf>
+Package pdftex.def Info: Figures/LinPlot0217.pdf used on input line 1073.
+(pdftex.def)             Requested size: 227.62204pt x 294.57098pt.
+ [67 <./Figures/SensPlot0217.pdf> <./Figures/LinPlot0217.pdf>]
+<Figures/SLAC_PvT_ppq_sensitivity.png, id=1456, 578.16pt x 433.62pt>
+File: Figures/SLAC_PvT_ppq_sensitivity.png Graphic file (type png)
+
+<use Figures/SLAC_PvT_ppq_sensitivity.png>
+Package pdftex.def Info: Figures/SLAC_PvT_ppq_sensitivity.png used on input lin
+e 1085.
+(pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
+ [68 <./Figures/SLAC_PvT_ppq_sensitivity.png (PNG copy)>] (./Sampling_Manual.bb
+l)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1111.
+ [69]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1111.
+ (./Sampling_Manual.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1111.
 
 Package rerunfilecheck Info: File `Sampling_Manual.out' has not changed.
-(rerunfilecheck)             Checksum: B8D26F8A0641DEFEFE478721443770CC;1648.
+(rerunfilecheck)             Checksum: 5FB7ECBAA441887E2D156DEF5A62B74B;1877.
 
 
 LaTeX Warning: There were undefined references.
@@ -862,13 +898,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1008.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1111.
  ) 
 Here is how much of TeX's memory you used:
- 8269 strings out of 493089
- 129577 string characters out of 6134842
- 223647 words of memory out of 5000000
- 11423 multiletter control sequences out of 15000+600000
+ 8307 strings out of 493089
+ 130271 string characters out of 6134842
+ 224722 words of memory out of 5000000
+ 11443 multiletter control sequences out of 15000+600000
  25768 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,40p,1422b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -886,10 +922,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on Sampling_Manual.pdf (64 pages, 8149303 bytes).
+Output written on Sampling_Manual.pdf (69 pages, 8241077 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 619 compressed objects within 7 object streams
- 209 named destinations out of 1000 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1571 PDF objects out of 1728 (max. 8388607)
+ 1413 compressed objects within 15 object streams
+ 226 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
