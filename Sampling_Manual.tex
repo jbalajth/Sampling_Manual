@@ -60,15 +60,6 @@
 
 
 
-% Place your abstract within the special {sciabstract} environment.
-
-\begin{abstract}
-
-\end{abstract}
-
-\section{Introduction}
-For almost 40 years, xenon has been used as a detector medium in radiation detectors. 
-
 \section{Technical Overview}
 A cold trap sampling system is designed to flow a sample of xenon with trace amounts of impurities through a section of liquid nitrogen cooled plumbing, to a mass-spectrometer for purity analysis. This document will deal particularly with krypton, but the method described also works for most simple impurities  such as helium, argon, nitrogen, oxygen, methane, etc.. Less volatile impurities such as water and large hydrocarbons tend to freeze along with the xenon, so are not detected. 
 
@@ -958,10 +949,13 @@ To prepare the calibration xenon, the injection space is filled to some known pr
 \begin{equation}
 \Phi_{Kr} = \frac{a^{N}P_{Kr,0}V_{inj}\rho_{Kr} }{P_{Xe}V_{Xe}\rho_{Xe}},
 \end{equation}
-where the expansion ratio, $a$, is given by $V_{inj}/(V_{inj}+V_{expansion})$, $N$ is the number of expansions, $P_{Kr,0}$ and $P_{Xe}$ are the krypton and xenon pressures initially injected into the system, and $\rho_{Kr}$ and $\rho_{Xe}$ are the krypton and xenon gas densities. Except for the densities, which are assumed to be exact, the pressures and volumes usually have comparable fractional uncertainties, with the exception of $V_{inj}$, which will be slightly dominant. After a few expansions this dominance becomes more pronounced. If we keep in mind the definition of $a$ from above, we find the following expression for the uncertainty on $\Phi_{Kr}$:
+where the expansion ratio, $a$, is given by $V_{inj}/(V_{inj}+V_{expansion})$, $N$ is the number of expansions, $P_{Kr,0}$ and $P_{Xe}$ are the krypton and xenon pressures initially injected into the system, and $\rho_{Kr}=3.4692$ g/liter and $\rho_{Xe}=5.4535$ g/liter are the krypton and xenon gas densities.\cite{nist} 
+
+Except for the densities, which are assumed to be exact, the pressures and volumes usually have comparable fractional uncertainties, with the exception of $V_{inj}$, which will be slightly dominant. After a few expansions this dominance becomes more pronounced. If we keep in mind the definition of $a$ from above, we find the following expression for the uncertainty on $\Phi_{Kr}$:
 \begin{equation}
 \sigma_{\Phi}^{2} = \Phi_{Kr}^2\left[  \left((N+1)\frac{\sigma_{V_{inj}}}{V_{inj}}\right)^2 + \left(N\frac{\sigma_{V_{exp}}}{V_{exp}}\right)^2  + \left(\frac{\sigma_{P_{Kr}}}{P_{Kr}}\right)^2   + \left(\frac{\sigma_{P_{Xe}}}{P_{Xe}}\right)^2   + \left(\frac{\sigma_{V_{Xe}}}{V_{Xe}}\right)^2  \right].
 \end{equation}
+This expression is not a perfect estimation of the error on the uncertainty. Typically either $V_{inj}$ will be used to measure $V_{exp}$, or vice versa. To incorporate the effects of correlated uncertainties, we can run the calculations for volume measurements and concentrations many times, randomly varying the pressure measurements and reference volume according to their respective uncertainties.
 
 The final injection pressure must be kept above 0.01 torr to ensure the krypton remains above the molecular flow regime. This sets a lower limit on the concentration of calibration xenon that can be produced through this method. With an injection volume of 5cc and a xenon volume of 4000cc, the lowest concentration than can be produced from pure krypton is about 5 ppB. In order to produce calibration xenon with smaller concentrations, the pure krypton is replaced with the ppB level calibration xenon, which is diluted into clean xenon through the same process outlined in the previous paragraph.
 
@@ -995,14 +989,16 @@ There was one significant outlier in our blank data which had a value of 118 $\p
 
 
 \subsection{Mixing of ppQ Level Samples}
-The previously mention 274 ppB cocktail xenon' was prepared using a separate system at the University of Maryland. The volumes of this system were measured by volume sharing as described in section \ref{sec:calprep}. The pressure gauge used was an MKS Baratron 722b capacitance manometer, and the absolute reference volume was a 500cc Swagelok DOT-compliant sample cylinder. This reference volume doubled as the xenon space. The volume of the injection space was measured to be $16.0 \pm 0.2$cc. The expansion ratio is $a=0.0261+/-0.0006$. The starting xenon pressure was $841\pm4$ Torr in the 500cc xenon space. We injected an initial krypton pressure of $638\pm3$ Torr in the injection space. We expanded three times before mixing it with the xenon yielding a mixture with $274\pm19$ ppB (g Kr)/(g Xe).
+The previously mention 274 ppB cocktail xenon' was prepared using a separate system at the University of Maryland. The volumes of this system were measured by volume sharing as described in section \ref{sec:calprep}. The pressure gauge used was an MKS Baratron 722b capacitance manometer The accuracy of the 722b pressure gauge is 0.5\% of the reading. We also observe a constant zero offset of the gauge to be $0.8\pm0.5$ Torr which will be subtracted from the pressure readings. The absolute reference volume was a 500cc Swagelok DOT-compliant sample cylinder. The output of this bottle was modified to accommodate a 1/4 inch VCR B-series bellows valve. We take the volume of this space to be $500 \pm10$cc. This reference volume doubled as the xenon space. 
+
+The volume of the injection space was measured to be $16.00 \pm 0.25$cc. The expansion ratio is $a=0.0261 \pm0.0008$. The starting xenon pressure was $841\pm4$ Torr in the 500cc xenon space. We injected an initial krypton pressure of $638\pm3$ Torr in the injection space. We expanded three times before mixing it with the xenon yielding a mixture with $276\pm25$ ppB (g Kr)/(g Xe).
 \begin{figure}[h!]
   \includegraphics[width=\linewidth]{Figures/SLAC_ColdTrap_diagram_wvols.pdf}
   \caption{P\&ID of the SLAC sampling system.}
   \label{fig:SLACpid}
 \end{figure}
 
-The second-order mixings to dilute the 274 ppB cocktail xenon were done in-situ in the SLAC system. The SLAC sampling system is diagramed in figure \ref{fig:SLACpid}. The blue boxes and corresponding arrows indicate the various isolated spaces in the system, the volumes for which are listed in table \ref{tab:SLACvols}. The spaces of interest for mixing are spaces 1, 3, 4, 5, 6, and 7. The cocktail xenon is stored in space 6, the clean xenon is held in spaces 1, and the injection volume is space 5. As our primary expansion volume we used space 4 and used spaces 7 and 3 to increase the volume as needed.
+The second-order mixings to dilute the 276 ppB cocktail xenon were done in-situ in the SLAC system. The SLAC sampling system is diagramed in figure \ref{fig:SLACpid}. The blue boxes and corresponding arrows indicate the various isolated spaces in the system, the volumes for which are listed in table \ref{tab:SLACvols}. The spaces of interest for mixing are spaces 1, 3, 4, 5, 6, and 7. The cocktail xenon is stored in space 6, the clean xenon is held in spaces 1, and the injection volume is space 5. As our primary expansion volume we used space 4 and used spaces 7 and 3 to increase the volume as needed.
 \begin{table}[h!]
 \centering
  \label{tab:SLACvols}
@@ -1011,14 +1007,14 @@ The second-order mixings to dilute the 274 ppB cocktail xenon were done in-situ 
  \hline
  Space \# & Volume (cc) & $\pm$ (cc) \\ 
  \hline\hline
-1 & 3864 & 5 \\ 
-2 & 3837 & 5 \\
-3 & 24.4 & 0.3 \\
-4 & 184.3 &1.6 \\
-5 & 4.9 & 0.1 \\
+1 & 3864 & 10 \\ 
+2 & 3837 & 10 \\
+3 & 23.9 & 1.4 \\
+4 & 186.3 &1.9 \\
+5 & 4.92 & 0.09 \\
 6 & 1000 & 5 \\
-7 & 87.3 & 0.9 \\
-8 & 183.8 & 1.8 \\
+7 & 93.8 & 1.6 \\
+8 & 221.0 & 4.9 \\
  \hline
  \hline
 \end{tabular}
@@ -1035,13 +1031,13 @@ The cocktail xenon was initially at a pressure of $128.0\pm0.6$ Torr. Since we d
  $\Phi$ (ppQ) & $\pm$ (ppQ) &  Expansion Spaces & $N_{exp}$ & $N_{inj}$ & $P_{inj}$ (Torr) \\ 
  \hline
  \hline
-4.8 & 0.3 & 5+7 & 2 & 1 & 128 \\ 
-4.8 & 0.3 & 5+7 & 2 & 1 & 127.4 \\ 
-10.3 & 0.6 & 5 & 2 & 1 &126.8 \\
-20.5 & 1.2 & 5 & 2 & 2 & 126.3,125.8 \\
-44.9 & 2.2 & (5),(5+3) & 1,1 & 1* & 125.2 \\
-10.1 & 0.6 & 5 & 2 & 1 & 124.6 \\
-245.2 & 9.8 & 5+7+3 & 1 & 1 & 124.0 \\
+4.92 & 0.49 & 5+7 & 2 & 1 & 128 \\ 
+4.90 & 0.49 & 5+7 & 2 & 1 & 127.4 \\ 
+10.8 & 1.1 & 5 & 2 & 1 &126.8 \\
+21.6 & 2.2 & 5 & 2 & 2 & 126.3,125.8 \\
+46.1 & 4.9 & (5),(5+3) & 1,1 & 1* & 125.2 \\
+10.7 & 1.1 & 5 & 2 & 1 & 124.6 \\
+255 & 24 & 5+7+3 & 1 & 1 & 124.0 \\
  \hline
  \hline
 \end{tabular}
@@ -1052,14 +1048,14 @@ The procedure for mixing follows the same outline as in section \ref{sec:calprep
 \begin{equation}
 \Phi_{Kr}=\frac{(274 \ ppB)\cdot (4.9 \ cc)\cdot P_{inj}}{(4073 \ cc)\cdot (2720 \ Torr)}\left(\frac{4.9 \ cc}{4.9 \ cc + V_{exp}}\right)^{N_{exp}}
 \end{equation}
-The actual values used in the preparation of our ppQ level samples are listed in table \ref{tab:concentrations}. The total expansion volume will be equal to the sum of volumes indicated in the ``Expansion Spaces'' column. There are two samples with slightly altered mixing procedures. The 20.5 ppQ sample was prepared by completing two consecutive injections using the same mixing parameters in order to approximately double the previous 10.3 ppQ concentration. The 44.9 ppQ sample was prepared in a slightly more complex way. We first filled the injection volume (space 5) and expanded once into space 4 as usual. However, after pumping out the expanded cocktail xenon in space 4, we expanded into both space 4 and space 3. We then pumped out spaces 4 and 5, and mixed our clean sample xenon with the cocktail xenon that had expanded into space 3. The calculation for this concentration is then:
+The actual values used in the preparation of our ppQ level samples are listed in table \ref{tab:concentrations}. The total expansion volume will be equal to the sum of volumes indicated in the ``Expansion Spaces'' column. There are two samples with slightly altered mixing procedures. The 21.6 ppQ sample was prepared by completing two consecutive injections using the same mixing parameters in order to approximately double the previous 10.3 ppQ concentration. The 46.1 ppQ sample was prepared in a slightly more complex way. We first filled the injection volume (space 5) and expanded once into space 4 as usual. However, after pumping out the expanded cocktail xenon in space 4, we expanded into both space 4 and space 3. We then pumped out spaces 4 and 5, and mixed our clean sample xenon with the cocktail xenon that had expanded into space 3. The calculation for this concentration is then:
 \begin{equation}
 \Phi_{Kr}=\frac{(274 \ ppB)\cdot ( 24.4 \ cc)\cdot (125.2 Torr)}{(4073 \ cc)\cdot (2720 \ Torr)}\frac{4.9 \ cc}{189.2 \ cc }\frac{4.9 \ cc}{213.6 \ cc }
 \end{equation}
 
 
 \subsection{Measurements of ppQ Level Samples}
-With the measurability of 0 established, and low-concentration xenon samples in hand, we move to measure the sensitivity limit of the SLAC sampling system. To do this we first measure $X$ as described in equation \ref{eq:SLACintan} for each of the samples listed in table \ref{tab:concentrations}, and then fit a line to the set of ($\Phi_{Kr},X$). The data and best-fit line are shown in figure \ref{fig:linplot2017}. The slope of the best fit line is $10.14 \pm 1.1$ pTorr seconds/ ppQ, and the intercept is $22.7\pm 9.3$ pTorr seconds. 
+With the measurability of 0 established, and low-concentration xenon samples in hand, we move to measure the sensitivity limit of the SLAC sampling system. To do this we first measure $X$ as described in equation \ref{eq:SLACintan} for each of the samples listed in table \ref{tab:concentrations}, and then fit a line to the set of ($\Phi_{Kr},X$). The data and best-fit line are shown in figure \ref{fig:linplot2017}. The slope of the best fit line is $10.1 \pm 1.4$ pTorr seconds/ ppQ, and the intercept is $22 \pm 12$ pTorr seconds. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{0.5\textwidth}
@@ -1078,7 +1074,7 @@ With the measurability of 0 established, and low-concentration xenon samples in 
 \label{fig:linplot2017}
 \end{figure}
 
-The limit of sensitivity will be defined as the concentration at which 90\% of analyses will produce results greater than 1-$\sigma$ above a 0 ppQ measurement. Our 0 ppQ measurements have a signal of 10 $\pm$31 pTorr seconds. The lowest-concentration measurements ($<30$ ppQ) deviate off of the best fit line by 46 pTorr seconds, so the 90\% confidence limit at any concentration will be 59 pTorr below the best fit line. Putting this together, we are looking for the concentration at which the best fit line drops crosses 100 pTorr seconds. This puts our limit of sensitivity at 7.7 $\pm 1.6$ ppQ.
+The limit of sensitivity will be defined as the concentration at which 90\% of analyses will produce results greater than 1-$\sigma$ above a 0 ppQ measurement. Our 0 ppQ measurements have a signal of 10 $\pm$31 pTorr seconds. The lowest-concentration measurements ($<30$ ppQ) deviate off of the best fit line by 46 pTorr seconds, so the 90\% confidence limit at any concentration will be 59 pTorr below the best fit line. Putting this together, we are looking for the concentration at which the best fit line drops crosses 100 pTorr seconds. This puts our limit of sensitivity at 7.7 $\pm 2.0$ ppQ.
 
 
 \begin{figure}[h!]

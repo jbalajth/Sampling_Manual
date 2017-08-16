@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Sampling_Manual.aux
+The style file: Science.bst
+Database file #1: main.bib
+I was expecting a `,' or a `}'---line 126 of file main.bib
+ :   
+ :   howpublished = {\url{http://pruffle.mit.edu/~ccarter/8b/Lecture_08/Lecture_08.html#eq:ltde}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in vac_eq
+Warning--can't use both author and editor fields in nist
+Warning--empty year in nist
+You've used 8 entries,
+            2300 wiz_defined-function locations,
+            780 strings with 7028 characters,
+and the built_in function-call counts, 1406 in all, are:
+= -- 121
+> -- 56
+< -- 0
++ -- 28
+- -- 14
+* -- 105
+:= -- 228
+add.period$ -- 9
+call.type$ -- 8
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 79
+empty$ -- 140
+format.name$ -- 19
+if$ -- 317
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 7
+newline$ -- 27
+num.names$ -- 8
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 39
+swap$ -- 20
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 12
+width$ -- 9
+write$ -- 64
+(There was 1 error message)
